@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Louis Sirugue -</title>
+<title>Louis Sirugue</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,11 +69,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
+    const options = {
+      valueNames: ['listing-title','listing-image','listing-author','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-image","listing-author","listing-date","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -99,10 +161,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../teaching/index.html" aria-current="page"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -111,99 +169,150 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><center><br>
-Teaching<br>
-</center></h1>
-</div>
+<main class="content" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="cell">
-<style type="text/css">
-body{
-   min-width:850px;
-   width: auto !important;
-   width:1000px;
-}
-</style>
-</div>
-<!--
-## Present
--->
 <p><br></p>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p>2021-2024<br>Own course</p>
-</div><div class="column" style="width:60%;">
-<p><a href="https://louissirugue.github.io/metrics_on_R/home.html" target="_blank">Introduction to Econometrics and R Programming</a> <br><i>Undergraduate CPES Program</i></p>
-</div><div class="column" style="width:20%;">
-<p style="margin-top:.75em;">
-<a href="https://psl.eu/en/education/multidisciplinary-undergraduate-degree-cpes" target="_blank">Paris Sciences &amp; Lettres</a>
+<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1735686000000">
+<a href="migration_inequality.pdf" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="images/florence.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<b>Migration and Inequality</b>
+</h5>
+<div class="card-text listing-description">
+<br>Postgraduate - International Relations<br><i>Invited lecture</i>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Università degli Studi di Firenze
+</div>
+<div class="listing-date">
+2025
 </div>
 </div>
-<!--
-## Past
--->
-<div class="columns">
-<div class="column" style="width:20%;">
-<p>Fall 2022<br>Own course</p>
-</div><div class="column" style="width:60%;">
-<p><a href="https://louissirugue.github.io/intro_to_R/home.html" target="_blank">Introduction to R Programming</a> <br><i>Graduate APE Program</i></p>
-</div><div class="column" style="width:20%;">
-<p style="margin-top:.75em;">
-<a href="https://www.parisschoolofeconomics.eu/en/teaching/masters-program/ape-analysis-policy-in-economics/" target="_blank">Paris School of Economics</a>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1704063600000">
+<a href="https://louissirugue.github.io/metrics_on_R/home.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="images/cpes.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<b>Introduction to Econometrics and R Programming</b>
+</h5>
+<div class="card-text listing-description">
+<br>Undergraduate CPES Program<br><i>Own course</i>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Paris Sciences &amp; Lettres
+</div>
+<div class="listing-date">
+2024
 </div>
 </div>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p>Spring 2022<br>T.A. to <a href="https://floswald.github.io/" target="_blank">Florian Oswald</a></p>
-</div><div class="column" style="width:60%;">
-<p><a href="https://github.com/ScPoEcon/Advanced-Metrics-slides" target="_blank">Advanced Econometrics</a> <br><i>Undergraduate Program</i></p>
-</div><div class="column" style="width:20%;">
-<p style="margin-top:.75em;">
-<a href="https://www.sciencespo.fr/college/en/academics/undergraduate-college-at-a-glance" target="_blank">Sciences Po</a>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1704063600000">
+<a href="https://github.com/ScPoEcon/Advanced-Metrics-slides" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="images/scpo.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<b>Advanced Econometrics</b>
+</h5>
+<div class="card-text listing-description">
+<br>Undergraduate Program<br><i>T.A. to Florian Oswald</i>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Sciences Po
+</div>
+<div class="listing-date">
+2024
 </div>
 </div>
-<div class="columns">
-<div class="column" style="width:20%;">
-<p>Spring 2021<br>T.A. to Léo Zabrocki</p>
-</div><div class="column" style="width:60%;">
-<p>Introduction to Causal Inference<br><i>Undergraduate CPES Program</i></p>
-</div><div class="column" style="width:20%;">
-<p style="margin-top:.75em;">
-<a href="https://psl.eu/en/education/multidisciplinary-undergraduate-degree-cpes" target="_blank">Paris Sciences &amp; Lettres</a>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1641078000000">
+<a href="https://louissirugue.github.io/intro_to_R/home.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="images/ape.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<b>Introduction to R Programming</b>
+</h5>
+<div class="card-text listing-description">
+<br>Graduate APE Program<br><i>Own course</i>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Paris School of Economics
+</div>
+<div class="listing-date">
+2022
 </div>
 </div>
-<p><br><br><br></p>
-<div class="columns">
-<div class="column" style="width:10%;">
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1609455600000">
+<a href="https://psl.eu/en/education/multidisciplinary-undergraduate-degree-cpes" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="images/leo.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+<b>Introduction to Causal Inference</b>
+</h5>
+<div class="card-text listing-description">
+<br>Undergraduate CPES Program<br><i>T.A. to Léo Zabrocki</i>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Paris Sciences &amp; Lettres
+</div>
+<div class="listing-date">
+2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 <p><br></p>
-</div><div class="column" style="width:80%;">
 <div class="cell">
 <div class="cell-output-display">
 <div id="gallery-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -303,10 +412,6 @@ body{
 </div>
 </div>
 </div>
-</div><div class="column" style="width:10%;">
-<p><br></p>
-</div>
-</div>
 <style>
 
 #hero-banner {
@@ -365,6 +470,7 @@ padding-bottom: 1em;
   
 }
 </style>
+
 
 
 

@@ -1,191 +1,135 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Louis Sirugue",
+    "section": "",
+    "text": "Post-doctoral researcher at the London School of Economics - International Inequalities Institute.\nMy research focuses on intergenerational mobility and on the socio-economic integration of children of immigrants. I conduct econometric analyses to provide insights on the determinants of intergenerational persistence.\n \n  \n   \n  \n    \n     Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     ORCID\n  \n  \n    \n     CV\n  \n\n\n\n\n\nLondon School of Economics Houghton Street Center Building – 4.08 London WC2A 2AE"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "teaching/index.html",
     "href": "teaching/index.html",
-    "title": "\nTeaching\n",
+    "title": "Louis Sirugue",
     "section": "",
-    "text": "2021-2024Own course\n\nIntroduction to Econometrics and R Programming Undergraduate CPES Program\n\n\nParis Sciences & Lettres\n\n\n\n\n\n\nFall 2022Own course\n\nIntroduction to R Programming Graduate APE Program\n\n\nParis School of Economics\n\n\n\n\n\nSpring 2022T.A. to Florian Oswald\n\nAdvanced Econometrics Undergraduate Program\n\n\nSciences Po\n\n\n\n\n\nSpring 2021T.A. to Léo Zabrocki\n\nIntroduction to Causal InferenceUndergraduate CPES Program\n\n\nParis Sciences & Lettres\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to the `dplyr` grammar\n\n\n\n\n\n\n\nPractice times during classes\n\n\n\n\n\n\n\nHow (not) to lie with graphics\n\n\n\n\n\n\n\nIntroduction to OLS\n\n\n\n\n\n\n\nGoodness of fit\n\n\n\n\n\n\n\nHypothesis testing\n\n\n\n\n\n\n\nRomeo & Juliet text analysis\n\n\n\n\n\n\n\nIntroduction to academic research\n\n\n\n\n\n\n\nIntroduction to geocoded data\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+    "text": "Migration and Inequality\n\n\nPostgraduate - International RelationsInvited lecture\n\n\n\nUniversità degli Studi di Firenze\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Econometrics and R Programming\n\n\nUndergraduate CPES ProgramOwn course\n\n\n\nParis Sciences & Lettres\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced Econometrics\n\n\nUndergraduate ProgramT.A. to Florian Oswald\n\n\n\nSciences Po\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R Programming\n\n\nGraduate APE ProgramOwn course\n\n\n\nParis School of Economics\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Causal Inference\n\n\nUndergraduate CPES ProgramT.A. to Léo Zabrocki\n\n\n\nParis Sciences & Lettres\n\n\n2021\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to the `dplyr` grammar\n\n\n\n\n\n\n\nPractice times during classes\n\n\n\n\n\n\n\nHow (not) to lie with graphics\n\n\n\n\n\n\n\nIntroduction to OLS\n\n\n\n\n\n\n\nGoodness of fit\n\n\n\n\n\n\n\nHypothesis testing\n\n\n\n\n\n\n\nRomeo & Juliet text analysis\n\n\n\n\n\n\n\nIntroduction to academic research\n\n\n\n\n\n\n\nIntroduction to geocoded data\n\n\n\n\n\nPrevoius\n\n\n\nNext"
   },
   {
     "objectID": "research/index.html",
     "href": "research/index.html",
-    "title": "\nResearch\n",
-    "section": "",
-    "text": "With Gustave Kenedi\nJournal of Public Economics, 2023\nWe provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates intergenerational persistence with rank-based estimators. Our results suggest France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to parents in the bottom 20% reach the top 20% in adulthood, four times less than children from the top 20%. We uncover substantial spatial variations in intergenerational mobility across departments, and a positive relationship between geographic mobility and intergenerational upward mobility. The expected income rank of individuals from the bottom of the parent income distribution who moved towards high-income departments is around the same as the expected income rank of individuals from the 75th percentile who stayed in their childhood department.\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational rank-rank relationship\n\n\n\n\n\n\n\nInternational comparison\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "research/index.html#publications",
-    "href": "research/index.html#publications",
-    "title": "\nResearch\n",
-    "section": "Publications",
-    "text": "Publications\n\n\n\nIntergenerational Income Mobility in France: A Comparative and Geographic Analysis\nWith Gustave Kenedi\nJournal of Public Economics, 2023\nWe provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates intergenerational persistence with rank-based estimators. Our results suggest France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to parents in the bottom 20% reach the top 20% in adulthood, four times less than children from the top 20%. We uncover substantial spatial variations in intergenerational mobility across departments, and a positive relationship between geographic mobility and intergenerational upward mobility. The expected income rank of individuals from the bottom of the parent income distribution who moved towards high-income departments is around the same as the expected income rank of individuals from the 75th percentile who stayed in their childhood department.\n\n\n\n\n   \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational rank-rank relationship\n\n\n\n\n\n\n\nInternational comparison\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "research/index.html#working-papers",
-    "href": "research/index.html#working-papers",
-    "title": "\nResearch\n",
-    "section": "Working papers",
-    "text": "Working papers\n\n\n\nTo become or not to become French: Conscription, citizenship, and labor market integration\nWith Yajna Govind - Working Paper 2023\nWe examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic Difference-in-Differences, we show that the probability of employment for EU males consequently increased by 1.7 percentage points, through a reduction in inactivity rather than unemployment. We provide suggestive evidence that this effect is mainly driven by an increase in public-sector employment and a reduction in self-employment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNaturalization and military service\n\n\n\n\n\n\n\nFirst stage - European Union\n\n\n\n\n\n\n\nSynthetic Difference-in-Differences on employment\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "research/index.html#work-in-progress",
-    "href": "research/index.html#work-in-progress",
-    "title": "\nResearch\n",
-    "section": "Work in progress",
-    "text": "Work in progress\n\nInequality of opportunity across origins in France: The role of residential segregation\nIf immigrants have lower incomes than natives, a high intergenerational income persistence would lead second-generation immigrants to earn also less than children of natives. I quantify the remaining gap between children of immigrants and natives with similar parental backgrounds, and I estimate the effect of residential segregation on this conditional gap. Using administrative French data, I find that second-generation immigrants from North Africa tend to earn less than children of natives, and that this gap persists when comparing individuals with the same parental socio-economic status. I use an index capturing how waterways divide spatially areas individuals grew up in to instrument for residential segregation. Results show that residential segregation has a negative impact on children’s conditional expected income rank, which is stronger for children of immigrants than for children of natives, hence contributing to the conditional income gap."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nLouis Sirugue\n",
-    "section": "",
-    "text": "PhD Candidate\n\nlouis.sirugue@psemail.eu\nParis School of Economics Office R5-70 48, Boulevard Jourdan 75014 Paris, France\n\n\n\n\n\n\n\n\nApplied Microeconomics · Labor Economics · Economics of Migration\n\n\nMy research focuses on intergenerational mobility and on the socio-economic integration of second-generation immigrants. I conduct econometric analyses and public policy evaluations on large administrative datasets to provide insights on the determinants of intergenerational persistence, such as residential segregation or discrimination.\n\n\n\n\n\nLatest news\n\n\n\n\nNov. 2023\n\nMy Job Market Paper is available on my website!\n\n\n\n\nOct. 2023\n\n[FR] Publication de la note IPP La mobilité intergénérationnelle de revenus en France : une analyse comparative et géographique, rédigée avec Gustave Kenedi\n\n\n\n\nSept. 2023\n\nOur paper with Gustave Kenedi is forthcoming in the Journal of Public Economics!Intergenerational Income Mobility in France: A Comparative and Geographic Analysis\n\n\n\n\nSept. 2023\n\nA preview of my Job Market Paper, co-authored with Yajna Govind, is available on my website! Full paper online soon.\n\n\n\n\n\nUpcoming talksPast talks"
-  },
-  {
-    "objectID": "jmp/index.html",
-    "href": "jmp/index.html",
-    "title": "\nJob market paper\n",
-    "section": "",
-    "text": "To become or not to become French: Conscription, citizenship, and labor market integration\nWith Yajna Govind\nWe examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic Difference-in-Differences, we show that the probability of employment for EU males consequently increased by 1.7 percentage points, through a reduction in inactivity rather than unemployment. We provide suggestive evidence that this effect is mainly driven by an increase in public-sector employment and a reduction in self-employment.\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNaturalization and military service\n\n\n\n\n\n\n\nFirst stage - European Union\n\n\n\n\n\n\n\nSynthetic Difference-in-Differences on employment\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/evaluation.html",
-    "href": "teaching/evaluation.html",
-    "title": "Teaching evaluations",
-    "section": "",
-    "text": "Mettre des graphs avec les notes des étudiants et des commentaires"
-  },
-  {
-    "objectID": "teaching/evaluation.html#test",
-    "href": "teaching/evaluation.html#test",
-    "title": "Teaching evaluations",
-    "section": "Test",
-    "text": "Test\n\n\nnanana\n\n\n\n\n\n\n\n\n\n\n\n\n\n Merci beaucoup pour ce semestre, vous étiez toujours très réactif lorsque nous avions besoin d’aide pour le mémoire et nous avons beaucoup appris de cet exercice !  \n\n\n\n\n\n Ce genre de questionnaire est un peu tricky à mon avis : Peut-on évaluer la qualité de l'enseignement de 1 à 5 ? Sinon merci beaucoup pour votre suivi et vos conseils, nous aurions apprécié de peut être vous rencontrer en présentiel pour la soutenance et d'avoir vos remarques en direct. Passez une bonne fin d'année !  \n\n\n\n\n\n Merci pour cette année ! Jai appris plein de choses.  \n\n\n\n\n\n Le cours était super. Vous étiez toujours disponible et attentif aux difficultés et questions qu'on avait parfois. Les réponses apportées étaient très claires et guidées. Je trouve que ce semestre nous a permis d'appliquer les méthodes vues au premier semestre notamment et de constater qu'elles permettaient effectivement de retrouver les résultats de chercheurs. J'ai aussi beaucoup apprécié le format du cours avec un rendu par semaine et un rendez-vous de 15 minutes pour chaque groupe. Cela permettait d'une part d'alléger un peu notre emploi du temps tout en bénéficiant d'un suivi personnalisé et régulier et d'autre part d'aborder plus facilement les difficultés rencontrées. Les objectifs hebdomadaires étaient par ailleurs précis de sorte que nous ne soyons pas surchargés de travail ou perdus tout en avançant sur notre mémoire. Merci pour ce cours et pour votre investissement. \n\n\n\n\n\n Les cours étaient très intéressants et les explications toujours bien claires. Seulement dans le suivi du projet, nous avons parfois eu l'impression que nos avancées n'étaient pas toujours vérifiées et que certaines erreurs ou exigences étaient pointées du doigt bien après, ce qui a pu être déstabilisant. \n\n\n\n\n\n Un cours très clair avec des indications toujours efficaces à propos des devoirs à faire pour les séances successives. Merci beaucoup pour le semestre et pour votre disponibilité! \n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/index.html#past",
-    "href": "teaching/index.html#past",
-    "title": "\nTeaching\n",
-    "section": "Past",
-    "text": "Past\n\n\nFall 2022Own course\n\nIntroduction to R Programming Graduate APE Program\n\n\nParis School of Economics\n\n\n\n\n\nSpring 2022T.A. to Florian Oswald\n\nAdvanced Econometrics Undergraduate Program\n\n\nSciences Po\n\n\n\n\n\nSpring 2021T.A. to Léo Zabrocki\n\nIntroduction to Causal InferenceUndergraduate CPES Program\n\n\nParis Sciences & Lettres\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to the `dplyr` grammar\n\n\n\n\n\n\n\nPractice times during classes\n\n\n\n\n\n\n\nHow (not) to lie with graphics\n\n\n\n\n\n\n\nIntroduction to OLS\n\n\n\n\n\n\n\nGoodness of fit\n\n\n\n\n\n\n\nHypothesis testing\n\n\n\n\n\n\n\nRomeo & Juliet text analysis\n\n\n\n\n\n\n\nIntroduction to academic research\n\n\n\n\n\n\n\nIntroduction to geocoded data\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/index.html#present",
-    "href": "teaching/index.html#present",
-    "title": "\nTeaching\n",
-    "section": "Present",
-    "text": "Present\n\n\n2021-PresentOwn course\n\nIntroduction to Econometrics and R Programming Undergraduate CPES Program\n\n\nParis Sciences & Lettres"
-  },
-  {
-    "objectID": "teaching/evaluations/index.html",
-    "href": "teaching/evaluations/index.html",
-    "title": "\nTeaching evaluations\n",
-    "section": "",
-    "text": "Introduction to R Programming\nGraduate APE Program, Paris School of Economics - own course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“His material was really well prepared. I still consult his html. Very well made and useful.”\n\n\n\n\n\n“Great and helpful course, Louis is very knowledgable, his material is great, and the sessions are perfectly structured”\n\n\n\n\n\n“Very well organized and good slides/material. The class was a little bit slow, but I understand that given the different levels of familiarity of the group with R.”\n\n\n\n\n\n“Having only had limited familiarity with R beforehand, this R practice class was extremely helpful to me.”\n\n\n\n\n\n“Good course. Excellent material.”\n\n\n\n\n\n“Good course”\n\n\n\n\n\n“need for more R classes”\n\n\n\n\n\n“I already know R. This class should be facultative.”\n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext\n\n\n\n\n\n\n\n\n\n\n\nAdvanced Econometrics\nUndergraduate Program, Sciences Po - T.A. to F. Oswald\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Being more comfortable using R and aplying it to some of very userful statistical concepts”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Great seminar with a lot of pratical cases. Well done for following a syllabus and slides you didn't put in place!”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Louis is one of the most helpful lecturers I have ever met here at SciencesPo. He is super talented. He knows almost everything related to the course materials. He isalways ready to answer questions and doubts. (I tend to have too many questions.) He shows patience all the time. Econometrics is not super interesting, but Louis made it enjoyable somehow, which is much appreciated. Because of him, I may choose statistics/data science as my future study area. Thanks very much, Louis. I feel I have learnt so many things from you.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“The professor was very good at clearly explaining concepts and always made sure that we understood the topic before moving on. This enabled us to gain a deeper understanding of the course content.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Content of the course.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“instructor answered personal questions and was always available through email”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“The weekly quizzes were useful in keeping up to date with class material. The teacher was very good at explaining and answering class questions.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“The content and pace of this course was more difficult than the introductory class, which I appreciated.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“I appreciate how much the professor truly cared about our learning and was readily available to answer questions. The website with all of the powerpoints was really helpful.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Tasks and quizzes”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Achievement of technical skills and knowledge in a concise way”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Louis was always incredibly helpful and responsive. He went over the subject until he made sure that everyone understood perfectly. He replied to all of our emails immediately with great explanations. The course content was also extremely useful and interesting. The presentations and the lecture notes helped us a lot.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“The course materials were very interesting and there were regular-enough assignments toforce us to keep up.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Louis helped us a lot both inside and outside class. He was an excellent teacher at explaining the class material. His feedback on homeworks and quizzes were very informative. He let us give 10 minutes of break between classes -which is not a very common thing at SciencesPothanks to him I could concentrate easily.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“The teacher is very approachable and that made it easy for us to improve if we had a question or issue, and we asked him (important part). In addition to that, he tried to settle the concepts and retake some topics that might have been left unclear when he saw that we were a bit lost. In addition to that, when he saw errors in the quizzes or so, he spent his time solving them, so we could have a better experience. I think the best part of the course was care of the teacher, and for me that shows that he should take a bigger part in designing the syllabus.”\n\n\n\n\n\nWhat were the strongest aspects of your learning experience in this course?“Ressources numériques bien organisées et très utiles.”\n\n\n\n\n\nHow could the learning experience improve in this course?“I am really happy with this course”\n\n\n\n\n\nHow could the learning experience improve in this course?“Nothing! Everything is just fine. I love this course much.”\n\n\n\n\n\nHow could the learning experience improve in this course?“Sometimes the assignment questions were difficult to understand which caused confusion in the class.”\n\n\n\n\n\nHow could the learning experience improve in this course?“Avoid reading slides, giving detailed material to deepen and explain more than some slides that were not clear sometimes, without enough mathematical information for example.”\n\n\n\n\n\nHow could the learning experience improve in this course?“less focus on theory and running through slides - apply the learned things together in class - do more exercises - I often felt in homeworks etc that I had never seen what the questions were asking and generally felt very lost in the course, so more focus on applicability”\n\n\n\n\n\nHow could the learning experience improve in this course?“The quizzes and assessment often covered material that was not discussed in class.”\n\n\n\n\n\nHow could the learning experience improve in this course?“Increase the number of questions used in the weekly quizzes. It was frustrating to only get 2 questions wrong and score a 12/20. Last semester the introductory class weekly quiz system was better.”\n\n\n\n\n\nHow could the learning experience improve in this course?“I would have been nice to have a more centralized place with all the code from the powerpoints. Sometimes there were tables that didn't include code; it would have been nice to see that code to learn how to create similar tables.”\n\n\n\n\n\nHow could the learning experience improve in this course?“Have more quizzes on the topics that are not assessed, with solutions clearly posted on Moodle (it was a bit inconvenient to find them through the forums)”\n\n\n\n\n\nHow could the learning experience improve in this course?“More emphasis on the code aspect”\n\n\n\n\n\nHow could the learning experience improve in this course?“Maybe some more in class practices.”\n\n\n\n\n\nHow could the learning experience improve in this course?“The materials were not presented in an engaging way. At times, it felt the professor was just reading off the slides and his answers to questions did not make much sense or answer the question a lot of the time.”\n\n\n\n\n\nHow could the learning experience improve in this course?“The course was good enough.”\n\n\n\n\n\nHow could the learning experience improve in this course?“More short and \"real\" coding activities that ensure that students acquire the learnings are needed. As someone who lacks knowledge in this area, I felt I was lost sometimes or doing things without too much reasoning behind them. Although having good results in the quizzes, when we had to apply what we learnt it was a disaster, losing marks in things that I could have acquired and that I theoretically understood at the beginning. The best would be to have little activities to submit, so this kind of things are detected and improved early on. Maybe there are online resources that could help in this sense. In addition to that, I feel that, even though it is complicated, more interaction between the students and the content (discussing real cases, trying to find solutions together, etc.) could improve not only the experience but also the knowledge acquisition. In my opinion, a more social approach to the topic is needed.”\n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Econometrics and R Programming\nUndergraduate CPES Program, Paris Sciences & Lettres - own course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“Merci beaucoup pour ce semestre, vous étiez toujours très réactif lorsque nous avions besoin d’aide pour le mémoire et nous avons beaucoup appris de cet exercice ! ”\n\n\n\n\n\n“Ce genre de questionnaire est un peu tricky à mon avis : Peut-on évaluer la qualité de l'enseignement de 1 à 5 ? Sinon merci beaucoup pour votre suivi et vos conseils, nous aurions apprécié de peut être vous rencontrer en présentiel pour la soutenance et d'avoir vos remarques en direct. Passez une bonne fin d'année ! ”\n\n\n\n\n\n“Merci pour cette année ! Jai appris plein de choses. ”\n\n\n\n\n\n“Le cours était super. Vous étiez toujours disponible et attentif aux difficultés et questions qu'on avait parfois. Les réponses apportées étaient très claires et guidées. Je trouve que ce semestre nous a permis d'appliquer les méthodes vues au premier semestre notamment et de constater qu'elles permettaient effectivement de retrouver les résultats de chercheurs. J'ai aussi beaucoup apprécié le format du cours avec un rendu par semaine et un rendez-vous de 15 minutes pour chaque groupe. Cela permettait d'une part d'alléger un peu notre emploi du temps tout en bénéficiant d'un suivi personnalisé et régulier et d'autre part d'aborder plus facilement les difficultés rencontrées. Les objectifs hebdomadaires étaient par ailleurs précis de sorte que nous ne soyons pas surchargés de travail ou perdus tout en avançant sur notre mémoire. Merci pour ce cours et pour votre investissement.”\n\n\n\n\n\n“Les cours étaient très intéressants et les explications toujours bien claires. Seulement dans le suivi du projet, nous avons parfois eu l'impression que nos avancées n'étaient pas toujours vérifiées et que certaines erreurs ou exigences étaient pointées du doigt bien après, ce qui a pu être déstabilisant.”\n\n\n\n\n\n“Un cours très clair avec des indications toujours efficaces à propos des devoirs à faire pour les séances successives. Merci beaucoup pour le semestre et pour votre disponibilité!”\n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/evaluations/index.html#test",
-    "href": "teaching/evaluations/index.html#test",
-    "title": "Teaching evaluations",
-    "section": "Test",
-    "text": "Test\n\n\nnanana\n\n\n\n\n\n\n\n\n\n\n\n\n\n Merci beaucoup pour ce semestre, vous étiez toujours très réactif lorsque nous avions besoin d’aide pour le mémoire et nous avons beaucoup appris de cet exercice !  \n\n\n\n\n\n Ce genre de questionnaire est un peu tricky à mon avis : Peut-on évaluer la qualité de l'enseignement de 1 à 5 ? Sinon merci beaucoup pour votre suivi et vos conseils, nous aurions apprécié de peut être vous rencontrer en présentiel pour la soutenance et d'avoir vos remarques en direct. Passez une bonne fin d'année !  \n\n\n\n\n\n Merci pour cette année ! Jai appris plein de choses.  \n\n\n\n\n\n Le cours était super. Vous étiez toujours disponible et attentif aux difficultés et questions qu'on avait parfois. Les réponses apportées étaient très claires et guidées. Je trouve que ce semestre nous a permis d'appliquer les méthodes vues au premier semestre notamment et de constater qu'elles permettaient effectivement de retrouver les résultats de chercheurs. J'ai aussi beaucoup apprécié le format du cours avec un rendu par semaine et un rendez-vous de 15 minutes pour chaque groupe. Cela permettait d'une part d'alléger un peu notre emploi du temps tout en bénéficiant d'un suivi personnalisé et régulier et d'autre part d'aborder plus facilement les difficultés rencontrées. Les objectifs hebdomadaires étaient par ailleurs précis de sorte que nous ne soyons pas surchargés de travail ou perdus tout en avançant sur notre mémoire. Merci pour ce cours et pour votre investissement. \n\n\n\n\n\n Les cours étaient très intéressants et les explications toujours bien claires. Seulement dans le suivi du projet, nous avons parfois eu l'impression que nos avancées n'étaient pas toujours vérifiées et que certaines erreurs ou exigences étaient pointées du doigt bien après, ce qui a pu être déstabilisant. \n\n\n\n\n\n Un cours très clair avec des indications toujours efficaces à propos des devoirs à faire pour les séances successives. Merci beaucoup pour le semestre et pour votre disponibilité! \n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/evaluations/index.html#introduction-to-econometrics-and-r-programming---undergraduate-cpes-program-paris-sciences-lettres",
-    "href": "teaching/evaluations/index.html#introduction-to-econometrics-and-r-programming---undergraduate-cpes-program-paris-sciences-lettres",
-    "title": "\nTeaching evaluations\n",
-    "section": "",
-    "text": "Merci beaucoup pour ce semestre, vous étiez toujours très réactif lorsque nous avions besoin d’aide pour le mémoire et nous avons beaucoup appris de cet exercice !  \n\n\n\n\n\n Ce genre de questionnaire est un peu tricky à mon avis : Peut-on évaluer la qualité de l'enseignement de 1 à 5 ? Sinon merci beaucoup pour votre suivi et vos conseils, nous aurions apprécié de peut être vous rencontrer en présentiel pour la soutenance et d'avoir vos remarques en direct. Passez une bonne fin d'année !  \n\n\n\n\n\n Merci pour cette année ! Jai appris plein de choses.  \n\n\n\n\n\n Le cours était super. Vous étiez toujours disponible et attentif aux difficultés et questions qu'on avait parfois. Les réponses apportées étaient très claires et guidées. Je trouve que ce semestre nous a permis d'appliquer les méthodes vues au premier semestre notamment et de constater qu'elles permettaient effectivement de retrouver les résultats de chercheurs. J'ai aussi beaucoup apprécié le format du cours avec un rendu par semaine et un rendez-vous de 15 minutes pour chaque groupe. Cela permettait d'une part d'alléger un peu notre emploi du temps tout en bénéficiant d'un suivi personnalisé et régulier et d'autre part d'aborder plus facilement les difficultés rencontrées. Les objectifs hebdomadaires étaient par ailleurs précis de sorte que nous ne soyons pas surchargés de travail ou perdus tout en avançant sur notre mémoire. Merci pour ce cours et pour votre investissement. \n\n\n\n\n\n Les cours étaient très intéressants et les explications toujours bien claires. Seulement dans le suivi du projet, nous avons parfois eu l'impression que nos avancées n'étaient pas toujours vérifiées et que certaines erreurs ou exigences étaient pointées du doigt bien après, ce qui a pu être déstabilisant. \n\n\n\n\n\n Un cours très clair avec des indications toujours efficaces à propos des devoirs à faire pour les séances successives. Merci beaucoup pour le semestre et pour votre disponibilité! \n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "teaching/evaluations/index.html#introduction-to-econometrics-and-r-programming",
-    "href": "teaching/evaluations/index.html#introduction-to-econometrics-and-r-programming",
-    "title": "\nTeaching evaluations\n",
-    "section": "",
-    "text": "Undergraduate CPES Program, Paris Sciences & Lettres\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Merci beaucoup pour ce semestre, vous étiez toujours très réactif lorsque nous avions besoin d’aide pour le mémoire et nous avons beaucoup appris de cet exercice !  \n\n\n\n\n\n Ce genre de questionnaire est un peu tricky à mon avis : Peut-on évaluer la qualité de l'enseignement de 1 à 5 ? Sinon merci beaucoup pour votre suivi et vos conseils, nous aurions apprécié de peut être vous rencontrer en présentiel pour la soutenance et d'avoir vos remarques en direct. Passez une bonne fin d'année !  \n\n\n\n\n\n Merci pour cette année ! Jai appris plein de choses.  \n\n\n\n\n\n Le cours était super. Vous étiez toujours disponible et attentif aux difficultés et questions qu'on avait parfois. Les réponses apportées étaient très claires et guidées. Je trouve que ce semestre nous a permis d'appliquer les méthodes vues au premier semestre notamment et de constater qu'elles permettaient effectivement de retrouver les résultats de chercheurs. J'ai aussi beaucoup apprécié le format du cours avec un rendu par semaine et un rendez-vous de 15 minutes pour chaque groupe. Cela permettait d'une part d'alléger un peu notre emploi du temps tout en bénéficiant d'un suivi personnalisé et régulier et d'autre part d'aborder plus facilement les difficultés rencontrées. Les objectifs hebdomadaires étaient par ailleurs précis de sorte que nous ne soyons pas surchargés de travail ou perdus tout en avançant sur notre mémoire. Merci pour ce cours et pour votre investissement. \n\n\n\n\n\n Les cours étaient très intéressants et les explications toujours bien claires. Seulement dans le suivi du projet, nous avons parfois eu l'impression que nos avancées n'étaient pas toujours vérifiées et que certaines erreurs ou exigences étaient pointées du doigt bien après, ce qui a pu être déstabilisant. \n\n\n\n\n\n Un cours très clair avec des indications toujours efficaces à propos des devoirs à faire pour les séances successives. Merci beaucoup pour le semestre et pour votre disponibilité! \n\n\n\n\n\n\n\nPrevoius\n\n\n\nNext"
-  },
-  {
-    "objectID": "index.html#latest-news",
-    "href": "index.html#latest-news",
-    "title": "Louis Sirugue",
-    "section": "Latest news",
-    "text": "Latest news\n\n\nSept. 2023\n\nOur paper with Gustave Kenedi is forthcoming in the Journal of Public Economics!Intergenerational Income Mobility in France: A Comparative and Geographic Analysis\n\n\n\n\nSept. 2023\n\nA preview of my Job Market Paper is available on my website!Full paper online soon."
-  },
-  {
-    "objectID": "cv/index.html",
-    "href": "cv/index.html",
     "title": "Louis Sirugue",
     "section": "",
-    "text": "&lt;iframe id=“cv_frame” width=“100%” height=“500%”"
+    "text": "Intergenerational mobility of immigrants in 15 destination countries\n\n\nNBER Working Paper, with 37 co-authorsCoordination: Leah Boustan and Mathias Fjællegaard Jensen\n\n\nWe estimate intergenerational mobility of immigrants and their children in fifteen receiving countries. We document large income gaps for first-generation immigrants that diminish in the second generation. Around half of the second-generation gap can be explained by differences in parental income, with the remainder due to differential rates of absolute mobility. The daughters of immigrants enjoy higher absolute mobility than daughters of locals in most destinations, while immigrant sons primarily enjoy this…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational Income Mobility in France: A Comparative and Geographic Analysis\n\n\nJournal of Public Economics (2023), with Gustave Kenedi\n\n\nWe provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates rank-based measures of intergenerational persistence. Our results suggest that France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo Become or Not to Become French: Conscription, Citizenship, and Labor Market Integration\n\n\nWIL Working Paper (2023), with Yajna Govind\n\n\nWe examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational Income Mobility Across Origins in France: The Role of Residential Segregation\n\n\nWork in Progress\n\n\nI investigate the differences in intergenerational mobility between children born in France to native versus immigrant parents. For most origin groups, and systematically among daughters, income gaps with children of natives disappear when comparing individuals whose parents had the same income. Still, a gap persists for sons of immigrants from North Africa, despite higher rates of college graduation at the lower end of the parents’ income distribution. The gap is lower among positive-income earners, and…\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "teaching/intro_to_R/index.html",
-    "href": "teaching/intro_to_R/index.html",
-    "title": "\nIntroduction to  Programming\n\nPSE - M1 APE\n\n\nFall 2022\n\n",
+    "objectID": "research/articles/igm.html",
+    "href": "research/articles/igm.html",
+    "title": "Intergenerational Income Mobility in France: A Comparative and Geographic Analysis",
     "section": "",
-    "text": "The objective of this course is to provide you with the necessary bases in R programming to be able to carry out your empirical homeworks and research projects. The course is structured in 4 classes of 2 hours. No preliminary knowledge in programming is required, but part of the content of the last lecture is based on what you’re going to see in Econometrics I. Lectures will take place in the computer room R2-07 at Campus Jourdan, but feel free to bring up your own laptop (in that case install R and R Studio before the first class)."
+    "text": "Policy brief: Institut des Politiques Publiques [fr] [en]\nMedia coverage: Le Monde, Charlie Hebdo, La Croix, Les Echos, Le Figaro (11/23), Le Figaro (03/24), Le Figaro Etudiant, VoxEU, Xerfi Canal, Finance committee report, Parliamentary report"
   },
   {
-    "objectID": "teaching/intro_to_R/index.html#material",
-    "href": "teaching/intro_to_R/index.html#material",
-    "title": "\nIntroduction to  Programming\n\nPSE - M1 APE\n\n\nFall 2022\n\n",
-    "section": "Material",
-    "text": "Material\n\n\n\nLecture 1\n\n\nLecture 2\n\n\nLecture 3\n\n\nLecture 4\n\n\n\nData Manipulation\n\n\nData visualization\n\n\nR Markdown & LaTeX\n\n\nEconometrics in R\n\n\n\nSlides\n\nhtml - pdf\n\n\nhtml - pdf\n\n\nhtml - pdf\n\n\nhtml - pdf\n\n\n\n\nData\n\ndata\n\n\ndata\n\n\ndata\n\n\ndata\n\n\n\n\nGroup 1\n01/09 09:00-11:00\n02/09 09:00-11:00\n07/09 14:00-16:00\n07/10 09:00-11:00\n\n\n\nGroup 2\n01/09 11:15-13:15\n02/09 11:15-13:15\n05/09 09:00-11:00\n07/10 11:15-13:15\n\n\n\nGroup 3\n01/09 14:30-16:30\n02/09 14:30-16:30\n05/09 16:00-18:00\n07/10 14:30-16:30"
-  },
-  {
-    "objectID": "teaching/intro_to_R/index.html#functions-glossary",
-    "href": "teaching/intro_to_R/index.html#functions-glossary",
-    "title": "\nIntroduction to  Programming\n\nPSE - M1 APE\n\n\nFall 2022\n\n",
-    "section": "Functions glossary",
-    "text": "Functions glossary"
-  },
-  {
-    "objectID": "teaching/intro_to_R/index.html#references",
-    "href": "teaching/intro_to_R/index.html#references",
-    "title": "\nIntroduction to  Programming\n\nPSE - M1 APE\n\n\nFall 2022\n\n",
-    "section": "References",
-    "text": "References\nThis course is adapted from the one I teach in CPES-2, inspired by:\n\nIntroduction to R, by H. Bull and P. Charousset. Paris School of Economics (2020)\nAdvanced Mircoeconometrics, by D. Margolis and F. Libois. Paris School of Economics (2020)\nHow to Lie with Graphics, by C. Bontemps. Toulouse School of Economics (2020)\nIntroduction to Econometrics with R, by F. Oswald, V. Viers, P. Villedieu, and G. Kenedi. SciencesPo Dep. of Economics (2020)\nIntroduction to Causal Inference, by L. Zabrocki. Paris Sciences et Lettres - CPES (2020)\nGeolocalized Datasets and Applications for Economics, by F. Libois and E. Madinier. Paris School of Economics (2020)\nCountless posts on stackoverflow and R-bloggers"
-  },
-  {
-    "objectID": "teaching/intro_to_R/index.html#cheatsheets",
-    "href": "teaching/intro_to_R/index.html#cheatsheets",
-    "title": "\nIntroduction to  Programming\n\nPSE - M1 APE\n\n\nFall 2022\n\n",
-    "section": "Cheatsheets",
-    "text": "Cheatsheets"
-  },
-  {
-    "objectID": "teaching/intro_to_R/lecture1/slides.html#welcome-to-the-course",
-    "href": "teaching/intro_to_R/lecture1/slides.html#welcome-to-the-course",
-    "title": "Data Manipulation",
+    "objectID": "teaching/index.html#courses",
+    "href": "teaching/index.html#courses",
+    "title": "Louis Sirugue",
     "section": "",
-    "text": "About me\n\n\n\nPhD student at the Paris School of Economics \nI work primarily on:\n\nIntergenerational (income) mobility\nResidential segregation\nDiscrimination\n\nI do empirical research, so I use Econometrics and (R) programming on a daily basis\nYou can reach me at louis.sirugue@psemail.eu for any question or comment about the course\n\n\n\n\n\n\n\nAbout the course\n\n\nObjective: Learning R programming to carry out your empirical homeworks and research projects\n4 \\(\\times\\) 2 hours:\n\nData manipulation\nData visualization\nR Markdown & LaTeX\nEconometrics in R\n\nLectures 1 to 3 are about learning R\n\n\n1-month break for you to follow the first lectures/tutorials in Econometrics 1\n\n\nLectures 4 is about Econometrics using R\n\n\n\n\n\nwill this text be blurry?"
+    "text": "Undergraduate CPES ProgramOwn course\n\n\n\nParis Sciences & Lettres\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate ProgramT.A. to Florian Oswald\n\n\n\nSciences Po\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGraduate APE ProgramOwn course\n\n\n\nParis School of Economics\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate CPES ProgramT.A. to Léo Zabrocki\n\n\n\nParis Sciences & Lettres\n\n\n2021\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "teaching/intro_to_R/lecture1/slides.html#getting-started",
-    "href": "teaching/intro_to_R/lecture1/slides.html#getting-started",
-    "title": "Data Manipulation",
-    "section": "1. Getting started",
-    "text": "1. Getting started"
+    "objectID": "teaching/index.html#snapshot",
+    "href": "teaching/index.html#snapshot",
+    "title": "Louis Sirugue",
+    "section": "Snapshot:",
+    "text": "Snapshot:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to the `dplyr` grammar\n\n\n\n\n\n\n\nPractice times during classes\n\n\n\n\n\n\n\nHow (not) to lie with graphics\n\n\n\n\n\n\n\nIntroduction to OLS\n\n\n\n\n\n\n\nGoodness of fit\n\n\n\n\n\n\n\nHypothesis testing\n\n\n\n\n\n\n\nRomeo & Juliet text analysis\n\n\n\n\n\n\n\nIntroduction to academic research\n\n\n\n\n\n\n\nIntroduction to geocoded data\n\n\n\n\n\nPrevoius\n\n\n\nNext"
   },
   {
-    "objectID": "teaching/intro_to_R/lecture1/slides.html#welcome-to-the-course-1",
-    "href": "teaching/intro_to_R/lecture1/slides.html#welcome-to-the-course-1",
-    "title": "Data Manipulation",
-    "section": "Welcome to the course!",
-    "text": "Welcome to the course!"
-  },
-  {
-    "objectID": "teaching/intro_to_R/lecture1/slides.html#blurry",
-    "href": "teaching/intro_to_R/lecture1/slides.html#blurry",
-    "title": "Data Manipulation",
-    "section": "blurry",
-    "text": "blurry"
-  },
-  {
-    "objectID": "teaching/intro_to_R/lecture1/slides.html",
-    "href": "teaching/intro_to_R/lecture1/slides.html",
-    "title": "Data Manipulation",
+    "objectID": "research/articles/kenedi_sirugue_2023.html",
+    "href": "research/articles/kenedi_sirugue_2023.html",
+    "title": "Intergenerational Income Mobility in France: A Comparative and Geographic Analysis",
     "section": "",
-    "text": "About me\n\n\n\nPhD student at the Paris School of Economics \nI work primarily on:\n\nIntergenerational (income) mobility\nResidential segregation\nDiscrimination\n\nI do empirical research, so I use Econometrics and (R) programming on a daily basis\nYou can reach me at louis.sirugue@psemail.eu for any question or comment about the course\n\n\n\n\n\n\n\nAbout the course\n\n\nObjective: Learning R programming to carry out your empirical homeworks and research projects\n4 \\(\\times\\) 2 hours:\n\nData manipulation\nData visualization\nR Markdown & LaTeX\nEconometrics in R\n\nLectures 1 to 3 are about learning R\n\n\n1-month break for you to follow the first lectures/tutorials in Econometrics 1\n\n\nLectures 4 is about Econometrics using R\n\n\n\n\n\nwill this text be blurry?"
+    "text": "Policy brief: Institut des Politiques Publiques [fr] [en]\nMedia coverage: Le Monde, Charlie Hebdo, La Croix, Les Echos, Le Figaro (11/23), Le Figaro (03/24), Le Figaro Etudiant, VoxEU, Xerfi Canal, Finance committee report, Parliamentary report\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational rank-rank relationship\n\n\n\n\n\n\n\nInternational comparison\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/govind_sirugue_2023.html",
+    "href": "research/articles/govind_sirugue_2023.html",
+    "title": "To Become or Not to Become Frech: Conscription, Citizenship, and Labor Market Integration",
+    "section": "",
+    "text": "Intergenerational rank-rank relationship\n\n\n\n\n\n\n\nInternational comparison\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/sirugue_2024.html",
+    "href": "research/articles/sirugue_2024.html",
+    "title": "Intergenerational Income Mobility Across Origins in France: The Role of Residential Segregation",
+    "section": "",
+    "text": "Intergenerational rank-rank relationship\n\n\n\n\n\n\n\nInternational comparison\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/3_sirugue_2024.html",
+    "href": "research/articles/3_sirugue_2024.html",
+    "title": "Intergenerational Income Mobility Across Origins in France: The Role of Residential Segregation",
+    "section": "",
+    "text": "Distribution of income deciles\n\n\n\n\n\n\n\nConditional income gap\n\n\n\n\n\n\n\nInstrumental variable\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/sirugue_2024/gen_graphs.html",
+    "href": "research/articles/sirugue_2024/gen_graphs.html",
+    "title": "Louis Sirugue",
+    "section": "",
+    "text": "Setup\n\n\nParents’ distribution\n\n\n\n\n\n\n\n\n\n\n\nConditional\n\n\n\n\n\n\n\n\n\n\n\nIV map"
+  },
+  {
+    "objectID": "research/articles/2_govind_sirugue_2023.html",
+    "href": "research/articles/2_govind_sirugue_2023.html",
+    "title": "To Become or Not to Become French: Conscription, Citizenship, and Labor Market Integration",
+    "section": "",
+    "text": "Naturalization and military service\n\n\n\n\n\n\n\nFirst stage - European Union\n\n\n\n\n\n\n\nSynthetic Difference-in-Differences on employment\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/govind_sirugue_2023/gen_graphs.html",
+    "href": "research/articles/govind_sirugue_2023/gen_graphs.html",
+    "title": "defense",
+    "section": "",
+    "text": "Setup\n\n\nNaturalization\n\n\n\n\n\n\n\n\n\n\n\nEU first stage\n\n\n\n\n\n\n\n\n\n\n\nEmployment"
+  },
+  {
+    "objectID": "research/articles/1_kenedi_sirugue_2023.html",
+    "href": "research/articles/1_kenedi_sirugue_2023.html",
+    "title": "Intergenerational Income Mobility in France: A Comparative and Geographic Analysis",
+    "section": "",
+    "text": "Policy brief: Institut des Politiques Publiques [fr] [en]\nMedia coverage: Le Monde, Charlie Hebdo, La Croix, Les Echos, Le Figaro (11/23), Le Figaro (03/24), Le Figaro Etudiant, VoxEU, Xerfi Canal, Finance committee report, Parliamentary report\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntergenerational rank-rank relationship\n\n\n\n\n\n\n\nSpatial variations\n\n\n\n\n\n\n\nIntergenerational and geographic mobility\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/articles/kenedi_sirugue_2023/gen_graphs.html",
+    "href": "research/articles/kenedi_sirugue_2023/gen_graphs.html",
+    "title": "defense",
+    "section": "",
+    "text": "Map\n\n\nGeographic mobility"
+  },
+  {
+    "objectID": "research/articles/0_boustan_et_al_2025.html",
+    "href": "research/articles/0_boustan_et_al_2025.html",
+    "title": "Intergenerational mobility of immigrants in 15 destination countries",
+    "section": "",
+    "text": "Income rank gaps between immigrants and the local-born, first generation (parents) and second generation (children)\n\n\n\n\n\n\n\nIncome rank gaps in first- and second-generation across countries (Sons)\n\n\n\n\n\n\n\nIncome rank gaps in first- and second-generation across countries (Daughters)\n\n\n\n\n\nPrevoius\n\n\n\nNext"
+  },
+  {
+    "objectID": "research/gen_graphs/boustan_et_al_2025.html#women",
+    "href": "research/gen_graphs/boustan_et_al_2025.html#women",
+    "title": "Convergence between generations",
+    "section": "Women",
+    "text": "Women"
+  },
+  {
+    "objectID": "research/gen_graphs/boustan_et_al_2025.html#men",
+    "href": "research/gen_graphs/boustan_et_al_2025.html#men",
+    "title": "Convergence between generations",
+    "section": "Men",
+    "text": "Men"
   }
 ]

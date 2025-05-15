@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Louis Sirugue -</title>
+<title>Louis Sirugue</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,8 +69,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -99,10 +161,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -114,236 +172,118 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><center><br>
-Research<br>
-</center></h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="cell">
-<style type="text/css">
-body{
-   min-width:850px;
-   width: auto !important;
-   width:1000px;
-}
-</style>
-</div>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<section id="intergenerational-income-mobility-in-france-a-comparative-and-geographic-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="intergenerational-income-mobility-in-france-a-comparative-and-geographic-analysis">Intergenerational Income Mobility in France:<br> A Comparative and Geographic Analysis</h3>
-<p><em>With <a href="https://gustavekenedi.github.io/" target="_blank">Gustave Kenedi</a></em></p>
-<p><strong>Journal of Public Economics, 2023</strong></p>
-<p>We provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates intergenerational persistence with rank-based estimators. Our results suggest France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to parents in the bottom 20% reach the top 20% in adulthood, four times less than children from the top 20%. We uncover substantial spatial variations in intergenerational mobility across departments, and a positive relationship between geographic mobility and intergenerational upward mobility. The expected income rank of individuals from the bottom of the parent income distribution who moved towards high-income departments is around the same as the expected income rank of individuals from the 75<sup>th</sup> percentile who stayed in their childhood department.</p>
-</section>
-</div><div class="column" style="width:60%;">
-<p><br></p>
-<center>
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4180259" target="_blank"><img src="../icons/file-earmark-text.svg" width="30"></a> <a style="margin-left:2em;" href="https://www.sciencedirect.com/science/article/abs/pii/S0047272723001561" target="_blank"><img src="../icons/journal-text.svg" width="30"></a> <a style="margin-left:2em;" href="https://congress-files.s3.amazonaws.com/2022-08/kenedi_sirugue_esem_2022_slides_1.pdf" target="_blank"><img src="../icons/easel2-fill.svg" width="30"></a> <a style="margin-left:2em;" href="https://github.com/gustavekenedi/intergenerational-mobility-france" target="_blank"><img src="../icons/github.svg" width="30"></a>
-</center>
-<p><br></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="gallery-carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="5000">
-<a href="intergenerational_mobility/rank_rank_cef.png">
-<img src="intergenerational_mobility/rank_rank_cef.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Intergenerational rank-rank relationship</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="intergenerational_mobility/rrc.png">
-<img src="intergenerational_mobility/rrc.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">International comparison</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="intergenerational_mobility/cef_rank_mobility.png">
-<img src="intergenerational_mobility/cef_rank_mobility.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Intergenerational and geographic mobility</p>
-</div>
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel1" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Prevoius</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel1" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<section id="to-become-or-not-to-become-french-conscription-citizenship-and-labor-market-integration" class="level3">
-<h3 class="anchored" data-anchor-id="to-become-or-not-to-become-french-conscription-citizenship-and-labor-market-integration">To become or not to become French:<br> Conscription, citizenship, and labor market integration</h3>
-<p><em>With <a href="https://sites.google.com/view/yajnagovind/home" target="_blank">Yajna Govind</a> - Working Paper 2023</em></p>
-<p>We examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic Difference-in-Differences, we show that the probability of employment for EU males consequently increased by 1.7 percentage points, through a reduction in inactivity rather than unemployment. We provide suggestive evidence that this effect is mainly driven by an increase in public-sector employment and a reduction in self-employment.</p>
-</section>
-</div><div class="column" style="width:60%;">
-<p><br></p>
-<center>
-<a href="../jmp.pdf" target="_blank"><img src="../icons/file-earmark-text.svg" width="30"></a>
-</center>
-<p><br></p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="gallery-carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="5000">
-<a href="naturalization/fs_weighted.png">
-<img src="naturalization/fs_weighted.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Naturalization and military service</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="naturalization/fs_EU.png">
-<img src="naturalization/fs_EU.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">First stage - European Union</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="naturalization/ss_employed.png">
-<img src="naturalization/ss_employed.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Synthetic Difference-in-Differences on employment</p>
-</div>
-</div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel2" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Prevoius</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel2" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="work-in-progress" class="level2">
-<h2 class="anchored" data-anchor-id="work-in-progress">Work in progress</h2>
-<section id="inequality-of-opportunity-across-origins-in-france-the-role-of-residential-segregation" class="level3">
-<h3 class="anchored" data-anchor-id="inequality-of-opportunity-across-origins-in-france-the-role-of-residential-segregation">Inequality of opportunity across origins in France: The role of residential segregation</h3>
-<p>If immigrants have lower incomes than natives, a high intergenerational income persistence would lead second-generation immigrants to earn also less than children of natives. I quantify the remaining gap between children of immigrants and natives with similar parental backgrounds, and I estimate the effect of residential segregation on this conditional gap. Using administrative French data, I find that second-generation immigrants from North Africa tend to earn less than children of natives, and that this gap persists when comparing individuals with the same parental socio-economic status. I use an index capturing how waterways divide spatially areas individuals grew up in to instrument for residential segregation. Results show that residential segregation has a negative impact on children’s conditional expected income rank, which is stronger for children of immigrants than for children of natives, hence contributing to the conditional income gap.</p>
 <style>
-
-#hero-banner {
-  padding-top: 35px;
-  background-color: rgb(237,243,249);
-}
-
-#quarto-content main { 
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-.headline {
-font-size: 1.25em;
-font-weight: 300;
-padding-bottom: 1em;
-}
-
-.headline p {
-  margin: 0;
-  padding-bottom: 0.2rem;
-}
-
-.headline a {
-  text-decoration: none;
-}
-
-.headline ul li {
-  margin-bottom: 0.3em;
-}
-
-.carousel.card {
-  padding-top: 2em;
-}
-
-.carousel img {
-  width: 70%;
-  margin-bottom: 110px;
-  border-style:none!important;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  margin-bottom: 110px;
-}
-
-.carousel-caption {
-  padding-top: 1em;
-}
-
-.touch {
-  
-}
+  .metadata { display:none !important; visibility:hidden !important; }
+  div.quarto-post .thumbnail { flex-basis: 40% !important; }
 </style>
 
 
-</section>
-</section>
 
-</main> <!-- /main -->
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1741778226797" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">
+<p><img src="../research/articles/boustan_et_al_2025/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">Intergenerational mobility of immigrants in 15 destination countries</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a><a href="https://www.nber.org/papers/w33558" target="_blank"><span style="color:#18BC9C!important;">NBER Working Paper</span></a>, <i>with 37 co-authors</i><br><i>Coordination: <a href="https://lboustan.scholar.princeton.edu/" target="_blank"><span style="color:#18BC9C!important;">Leah Boustan</span></a> and <a href="https://fjaellegaard.com/" target="_blank"><span style="color:#18BC9C!important;">Mathias Fjællegaard Jensen</span></a></i>
+</div>
+<div class="listing-description">
+<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"><span style="color:#6C757D;">We estimate intergenerational mobility of immigrants and their children in fifteen receiving countries. We document large income gaps for first-generation immigrants that diminish in the second generation. Around half of the second-generation gap can be explained by differences in parental income, with the remainder due to differential rates of absolute mobility. The daughters of immigrants enjoy higher absolute mobility than daughters of locals in most destinations, while immigrant sons primarily enjoy this…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1737805153759" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<div class="thumbnail">
+<p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external">
+<p><img src="../research/articles/kenedi_sirugue_2023/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external">Intergenerational Income Mobility in France: A Comparative and Geographic Analysis</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a><a href="https://www.sciencedirect.com/science/article/pii/S0047272723001561/" target="_blank"><span style="color:#18BC9C!important;">Journal of Public Economics (2023)</span></a>, <i>with <a href="https://gustavekenedi.github.io/" target="_blank"><span style="color:#18BC9C!important;">Gustave Kenedi</span></a></i>
+</div>
+<div class="listing-description">
+<a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"><span style="color:#6C757D;">We provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates rank-based measures of intergenerational persistence. Our results suggest that France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1737805250685" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">
+<p><img src="../research/articles/govind_sirugue_2023/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">To Become or Not to Become French: Conscription, Citizenship, and Labor Market Integration</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a><a href="https://wid.world/document/to-become-or-not-to-become-french-conscription-naturalization-and-labor-market-integration-wid-world-working-paper-2023-29/" target="_blank"><span style="color:#18BC9C!important;">WIL Working Paper (2023)</span></a>, <i>with <a href="https://sites.google.com/view/yajnagovind/home" target="_blank"><span style="color:#18BC9C!important;">Yajna Govind</span></a></i>
+</div>
+<div class="listing-description">
+<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"><span style="color:#6C757D;">We examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1737805283488" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/articles/3_sirugue_2024.html" class="no-external">
+<p><img src="../research/articles/sirugue_2024/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/articles/3_sirugue_2024.html" class="no-external">Intergenerational Income Mobility Across Origins in France: The Role of Residential Segregation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/articles/3_sirugue_2024.html" class="no-external">Work in Progress</a>
+</div>
+<div class="listing-description">
+<a href="../research/articles/3_sirugue_2024.html" class="no-external"><span style="color:#6C757D;">I investigate the differences in intergenerational mobility between children born in France to native versus immigrant parents. For most origin groups, and systematically among daughters, income gaps with children of natives disappear when comparing individuals whose parents had the same income. Still, a gap persists for sons of immigrants from North Africa, despite higher rates of college graduation at the lower end of the parents’ income distribution. The gap is lower among positive-income earners, and…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/articles/3_sirugue_2024.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
