@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -85,7 +85,63 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-work-in-progress .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-work-in-progress'] = new List('listing-work-in-progress', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -172,56 +228,32 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 <style>
   .metadata { display:none !important; visibility:hidden !important; }
   div.quarto-post .thumbnail { flex-basis: 40% !important; }
+  h1{margin-top: -20px;color:#A4A9AE;}
 </style>
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<p><br></p>
+<section id="publication" class="level1">
+<h1>Publication</h1>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1741778226797" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
-<div class="thumbnail">
-<p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">
-<p><img src="../research/articles/boustan_et_al_2025/out/preview.png" class="thumbnail-image"></p>
-</a><p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">Intergenerational mobility of immigrants in 15 destination countries</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a><a href="https://www.nber.org/papers/w33558" target="_blank"><span style="color:#18BC9C!important;">NBER Working Paper</span></a>, <i>with 37 co-authors</i><br><i>Coordination: <a href="https://lboustan.scholar.princeton.edu/" target="_blank"><span style="color:#18BC9C!important;">Leah Boustan</span></a> and <a href="https://fjaellegaard.com/" target="_blank"><span style="color:#18BC9C!important;">Mathias Fjællegaard Jensen</span></a></i>
-</div>
-<div class="listing-description">
-<a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"><span style="color:#6C757D;">We estimate intergenerational mobility of immigrants and their children in fifteen receiving countries. We document large income gaps for first-generation immigrants that diminish in the second generation. Around half of the second-generation gap can be explained by differences in parental income, with the remainder due to differential rates of absolute mobility. The daughters of immigrants enjoy higher absolute mobility than daughters of locals in most destinations, while immigrant sons primarily enjoy this…</span></a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/articles/0_boustan_et_al_2025.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1737805153759" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1760959557595" data-listing-reading-time-sort="1" data-listing-word-count-sort="164">
 <div class="thumbnail">
 <p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external">
 <p><img src="../research/articles/kenedi_sirugue_2023/out/preview.png" class="thumbnail-image"></p>
 </a><p><a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external">Intergenerational Income Mobility in France: A Comparative and Geographic Analysis</a>
+<h3 class="no-anchor listing-title" data-anchor-id="publication">
+<a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"><span style="font-size: 18pt!important;">Intergenerational Income Mobility in France: A Comparative and Geographic Analysis</span></a>
 </h3>
 <div class="listing-subtitle">
 <a href="../research/articles/1_kenedi_sirugue_2023.html" class="no-external"></a><a href="https://www.sciencedirect.com/science/article/pii/S0047272723001561/" target="_blank"><span style="color:#18BC9C!important;">Journal of Public Economics (2023)</span></a>, <i>with <a href="https://gustavekenedi.github.io/" target="_blank"><span style="color:#18BC9C!important;">Gustave Kenedi</span></a></i>
@@ -235,47 +267,101 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1737805250685" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="working-papers" class="level1">
+<h1>Working papers</h1>
+<div id="listing-working-papers" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1768396650358" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
 <div class="thumbnail">
-<p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">
-<p><img src="../research/articles/govind_sirugue_2023/out/preview.png" class="thumbnail-image"></p>
-</a><p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p>
+<p><a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external">
+<p><img src="../research/working-papers/boustan_et_al_2025/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">To Become or Not to Become French: Conscription, Citizenship, and Labor Market Integration</a>
+<h3 class="no-anchor listing-title" data-anchor-id="working-papers">
+<a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"><span style="font-size: 18pt!important;">Intergenerational mobility of immigrants in 15 destination countries</span></a>
 </h3>
 <div class="listing-subtitle">
-<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a><a href="https://wid.world/document/to-become-or-not-to-become-french-conscription-naturalization-and-labor-market-integration-wid-world-working-paper-2023-29/" target="_blank"><span style="color:#18BC9C!important;">WIL Working Paper (2023)</span></a>, <i>with <a href="https://sites.google.com/view/yajnagovind/home" target="_blank"><span style="color:#18BC9C!important;">Yajna Govind</span></a></i>
+<a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"></a><a href="https://www.nber.org/papers/w33558" target="_blank"><span style="color:#18BC9C!important;">NBER Working Paper (2025)</span></a>, <i>with 37 co-authors, <b>R&amp;R at American Economic Review</b></i><br><i>Coordination: <a href="https://lboustan.scholar.princeton.edu/" target="_blank"><span style="color:#18BC9C!important;">Leah Boustan</span></a> and <a href="https://fjaellegaard.com/" target="_blank"><span style="color:#18BC9C!important;">Mathias Fjællegaard Jensen</span></a></i>
 </div>
 <div class="listing-description">
-<a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"><span style="color:#6C757D;">We examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic…</span></a>
+<a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"><span style="color:#6C757D;">We estimate intergenerational mobility of immigrants and their children in fifteen receiving countries. We document large income gaps for first-generation immigrants that diminish in the second generation. Around half of the second-generation gap can be explained by differences in parental income, with the remainder due to differential rates of absolute mobility. The daughters of immigrants enjoy higher absolute mobility than daughters of locals in most destinations, while immigrant sons primarily enjoy this…</span></a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/articles/2_govind_sirugue_2023.html" class="no-external">
+<p><a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external"></a></p><a href="../research/working-papers/1_boustan_et_al_2025.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1737805283488" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1762969307732" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
 <div class="thumbnail">
-<p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/articles/3_sirugue_2024.html" class="no-external">
-<p><img src="../research/articles/sirugue_2024/out/preview.png" class="thumbnail-image"></p>
-</a><p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p>
+<p><a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"></a></p><a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external">
+<p><img src="../research/working-papers/ferreira_et_al_2025/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"></a></p>
 </div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../research/articles/3_sirugue_2024.html" class="no-external">Intergenerational Income Mobility Across Origins in France: The Role of Residential Segregation</a>
+<a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"><span style="font-size: 18pt!important;">Inherited Inequality in Latin America</span></a>
 </h3>
 <div class="listing-subtitle">
-<a href="../research/articles/3_sirugue_2024.html" class="no-external">Work in Progress</a>
+<a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"></a><a href="https://stonecenter.gc.cuny.edu/publications/inherited-inequality-in-latin-america/" target="_blank"><span style="color:#18BC9C!important;">Stone Center Working Paper (2025)</span></a>, <i>with <a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank"><span style="color:#18BC9C!important;">Francisco H. G. Ferreira</span></a>, <a href="https://www.unicaldine.it/" target="_blank"><span style="color:#18BC9C!important;">Paolo Brunori</span></a>, <a href="https://gneid.weebly.com/" target="_blank"><span style="color:#18BC9C!important;">Guido Neidhöfer</span></a>, and <a href="https://www.pedrosalasrojo.com/" target="_blank"><span style="color:#18BC9C!important;">Pedro Salas-Rojo</span></a></i>
 </div>
 <div class="listing-description">
-<a href="../research/articles/3_sirugue_2024.html" class="no-external"><span style="color:#6C757D;">I investigate the differences in intergenerational mobility between children born in France to native versus immigrant parents. For most origin groups, and systematically among daughters, income gaps with children of natives disappear when comparing individuals whose parents had the same income. Still, a gap persists for sons of immigrants from North Africa, despite higher rates of college graduation at the lower end of the parents’ income distribution. The gap is lower among positive-income earners, and…</span></a>
+<a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"><span style="color:#6C757D;">This chapter argues that relative measures of intergenerational mobility and inequality of opportunity are closely related ways of quantifying the inheritability of inequality. We review both literatures for Latin America, looking both at income and educational persistence. We document very high levels of intergenerational persistence and inequality of opportunity for education, with inherited characteristics predicting 29% to 52% of the current-generation variance in years of schooling. Inherited circumstances…</span></a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="../research/articles/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/articles/3_sirugue_2024.html" class="no-external">
+<p><a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external"></a></p><a href="../research/working-papers/2_ferreira_et_al_2025.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1760959538294" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external">
+<p><img src="../research/working-papers/govind_sirugue_2023/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"><span style="font-size: 18pt!important;">To Become or Not to Become French: Conscription, Citizenship, and Labor Market Integration</span></a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"></a><a href="https://wid.world/document/to-become-or-not-to-become-french-conscription-naturalization-and-labor-market-integration-wid-world-working-paper-2023-29/" target="_blank"><span style="color:#18BC9C!important;">WIL Working Paper (2023)</span></a>, <i>with <a href="https://sites.google.com/view/yajnagovind/home" target="_blank"><span style="color:#18BC9C!important;">Yajna Govind</span></a></i>
+</div>
+<div class="listing-description">
+<a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"><span style="color:#6C757D;">We examine how changing the costs of acquiring citizenship translates into naturalization decisions for second-generation immigrants, and the effect of naturalization on their labor market outcomes. We exploit the abolition of mandatory military service in France as an exogenous reduction in the cost of citizenship for men. In line with the predictions of our theoretical framework, we find that the reform induced a jump in male naturalization rates, entirely driven by European Union citizens. Using a Synthetic…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external"></a></p><a href="../research/working-papers/3_govind_sirugue_2023.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1768396308204" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"></a></p><a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external">
+<p><img src="../research/working-papers/ferreira_et_al_2026/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"><span style="font-size: 18pt!important;">Global Estimates of Opportunity and Mobility: A Database</span></a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"></a><a href="https://osf.io/preprints/socarxiv/wx2e8_v1" target="_blank"><span style="color:#18BC9C!important;">Stone Center Working Paper (2026)</span></a>, <i>with 17 co-authors,</i><br><i> Coordination: <a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank"><span style="color:#18BC9C!important;">Francisco H. G. Ferreira</span></a>, <a href="https://www.uniba.it/it/docenti/peragine-vitorocco" target="_blank"><span style="color:#18BC9C!important;">Vito Peragine</span></a>, <a href="https://www.unicaldine.it/" target="_blank"><span style="color:#18BC9C!important;">Paolo Brunori</span></a>, and <a href="https://www.pedrosalasrojo.com/" target="_blank"><span style="color:#18BC9C!important;">Pedro Salas-Rojo</span></a></i>
+</div>
+<div class="listing-description">
+<a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"><span style="color:#6C757D;">This paper describes a new public-access online database containing internationally comparable estimates of inequality of opportunity for seventy-two countries, covering two-thirds of the world’s population. The estimates were computed directly from the unit-record microdata for 196 household surveys, using a suite of machine-learning tools selected to minimize the omitted variable and overfitting biases discussed in the literature. Overall, differences in opportunities account for substantial shares of total…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external"></a></p><a href="../research/working-papers/4_ferreira_et_al_2026.html" class="no-external">
 </a>
 </div>
 </div>
@@ -283,7 +369,45 @@ window.Quarto = {
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="work-in-progress" class="level1">
+<h1>Work in progress</h1>
+<div id="listing-work-in-progress" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1760959508294" data-listing-reading-time-sort="1" data-listing-word-count-sort="75">
+<div class="thumbnail">
+<p><a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external">
+<p><img src="../research/work-in-progress/sirugue_2024/out/preview.png" class="thumbnail-image"></p>
+</a><p><a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title" data-anchor-id="work-in-progress">
+<a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external"><span style="font-size: 18pt!important;">Intergenerational Income Mobility Across Origins in France: The Role of Residential Segregation</span></a>
+</h3>
+<div class="listing-subtitle">
+<a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external">Work in Progress</a>
+</div>
+<div class="listing-description">
+<a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external"><span style="color:#6C757D;">I investigate the differences in intergenerational mobility between children born in France to native versus immigrant parents. For most origin groups, and systematically among daughters, income gaps with children of natives disappear when comparing individuals whose parents had the same income. Still, a gap persists for sons of immigrants from North Africa, despite higher rates of college graduation at the lower end of the parents’ income distribution. The gap is lower among positive-income earners, and…</span></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external"></a></p><a href="../research/work-in-progress/3_sirugue_2024.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

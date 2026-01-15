@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Louis Sirugue - Intergenerational Income Mobility in France: A Comparative and Geographic Analysis</title>
+<title>Louis Sirugue</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -66,12 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -111,147 +114,146 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link active" data-scroll-target="#data-cleaning">Data cleaning</a></li>
+  <li><a href="#graphs" id="toc-graphs" class="nav-link" data-scroll-target="#graphs">Graphs</a>
+  <ul class="collapse">
+  <li><a href="#coutry-time-trends" id="toc-coutry-time-trends" class="nav-link" data-scroll-target="#coutry-time-trends">Coutry time trends</a></li>
+  <li><a href="#overall-trend" id="toc-overall-trend" class="nav-link" data-scroll-target="#overall-trend">Overall trend</a></li>
+  <li><a href="#inverted-u-shape" id="toc-inverted-u-shape" class="nav-link" data-scroll-target="#inverted-u-shape">Inverted U-shape</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-solana column-body content">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span style="font-size: 18pt!important;">Intergenerational Income Mobility in France: A Comparative and Geographic Analysis</span></h1>
-<p class="subtitle lead"><a href="https://www.sciencedirect.com/science/article/pii/S0047272723001561/" target="_blank"><span style="color:#18BC9C!important;">Journal of Public Economics (2023)</span></a>, <i>with <a href="https://gustavekenedi.github.io/" target="_blank"><span style="color:#18BC9C!important;">Gustave Kenedi</span></a></i></p>
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="data-cleaning" class="level1">
+<h1>Data cleaning</h1>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                  short_ref    cohort     N
+                     &lt;char&gt;    &lt;char&gt; &lt;int&gt;
+ 1: Neidhöfer et al. (2018) 1940-1943    54
+ 2: Neidhöfer et al. (2018) 1944-1947    54
+ 3: Neidhöfer et al. (2018) 1948-1951    54
+ 4: Neidhöfer et al. (2018) 1952-1955    54
+ 5: Neidhöfer et al. (2018) 1956-1959    54
+ 6: Neidhöfer et al. (2018) 1960-1963    54
+ 7: Neidhöfer et al. (2018) 1964-1967    54
+ 8: Neidhöfer et al. (2018) 1968-1971    54
+ 9: Neidhöfer et al. (2018) 1972-1975    54
+10: Neidhöfer et al. (2018) 1976-1979    52
+11: Neidhöfer et al. (2018) 1980-1983    52
+12: Neidhöfer et al. (2018) 1984-1987    52
+13: Neidhöfer et al. (2018) 1988-1991    48
+14: Neidhöfer et al. (2018) 1992-1995    40</code></pre>
 </div>
-<div class="quarto-title-meta">
-  </div>
-<div>
-  <div class="abstract">
-    <div class="block-title">Abstract</div>
-    <span style="color:#6C757D;">We provide new estimates of intergenerational income mobility in France for children born in the 1970s using rich administrative data. Since parents’ incomes are not observed, we employ a two-sample two-stage least squares estimation. We show, using the Panel Study of Income Dynamics, that this method slightly underestimates rank-based measures of intergenerational persistence. Our results suggest that France is characterized by a strong persistence relative to other developed countries. 9.7% of children born to parents in the bottom 20% reach the top 20% in adulthood, four times less than children from the top 20%. We uncover substantial spatial variations in intergenerational mobility across departments, and a positive relationship between geographic mobility and intergenerational upward mobility. The expected income rank of individuals from the bottom of the parent income distribution who moved towards high-income departments is around the same as the expected income rank of individuals from the 75<sup>th</sup> percentile who stayed in their childhood department.</span>
-  </div>
+<div class="cell-output-display">
+<table class="table table-striped table-sm small" data-quarto-postprocess="true">
+<caption>Number of missing values for each variable</caption>
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">APA_ref</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">short_ref</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">country</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">year</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">cohort</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">indicator</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">method</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">data_type1</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">data_type2</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">data_source1</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">data_source2</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">estimate</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">se_ci</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">var_description</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">age_children</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">ages_parents</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">coresident</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">88900</td>
+<td style="text-align: right;">5100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">92400</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">92300</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">84100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">93100</td>
+<td style="text-align: right;">15600</td>
+<td style="text-align: right;">96800</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+
+
 </div>
-</header> <div class="about-links">
-  <a href="https://www.sciencedirect.com/science/article/pii/S0047272723001561/" class="about-link" rel="" target="">
-    <i class="bi bi-book"></i>
-     <span class="about-link-text">Publication</span>
-  </a>
-  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4180259" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-text"></i>
-     <span class="about-link-text">Working paper</span>
-  </a>
-  <a href="https://congress-files.s3.amazonaws.com/2022-08/kenedi_sirugue_esem_2022_slides_1.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-collection"></i>
-     <span class="about-link-text">Slides</span>
-  </a>
-  <a href="https://github.com/gustavekenedi/intergenerational-mobility-france" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Repo</span>
-  </a>
 </div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<style>
-  .quarto-title-meta { display:none !important; visibility:hidden !important; }
-</style>
-<p>Policy brief: <a href="https://www.ipp.eu/wp-content/uploads/2024/07/NoteIPP_Intergenerational-income-mobilityVEN.pdf" target="_blank">Institut des Politiques Publiques</a> <a href="https://www.ipp.eu/wp-content/uploads/2024/07/NoteIPP_mobilite_interg_revenus.pdf" target="_blank">[fr]</a> <a href="https://www.ipp.eu/wp-content/uploads/2024/07/NoteIPP_Intergenerational-income-mobilityVEN.pdf" target="_blank">[en]</a></p>
-<p>Media coverage: <a href="https://www.lemonde.fr/idees/article/2023/04/22/le-constat-sans-appel-de-l-etendue-de-l-inegalite-des-chances-en-france-devrait-provoquer-un-electrochoc_6170607_3232.html" target="_blank">Le Monde</a>, <a href="https://charliehebdo.fr/2024/08/economie/education-nationale-et-si-on-essayait-legalite/" target="_blank">Charlie Hebdo</a>, <a href="https://www.la-croix.com/france/Grandes-ecoles-voie-royale-couteuse-2023-11-22-1201291769" target="_blank">La Croix</a>, <a href="https://www.lesechos.fr/economie-france/conjoncture/lascenseur-social-fonctionne-moins-bien-en-france-quailleurs-2025874" target="_blank">Les Echos</a>, <a href="https://www.lefigaro.fr/vox/societe/l-editorial-du-figaro-magazine-education-la-grande-regression-20231110" target="_blank">Le Figaro (11/23)</a>, <a href="https://www.lefigaro.fr/decideurs/management/j-ai-ete-le-premier-bachelier-de-ma-famille-ces-dirigeants-qui-prouvent-que-l-ascenseur-social-fonctionne-encore-20240326" target="_blank">Le Figaro (03/24)</a>, <a href="https://etudiant.lefigaro.fr/article/vie-etudiante/il-faut-presenter-aux-jeunes-ruraux-des-parcours-d-excellence-pour-lever-l-autocensure-20231205/" target="_blank">Le Figaro Etudiant</a>, <a href="https://cepr.org/voxeu/columns/intergenerational-income-mobility-france-comparative-and-geographic-analysis" target="_blank">VoxEU</a>, <a href="https://www.xerficanal.com/economie/emission/Alexandre-Mirlicourtois-L-ascenseur-social-marche-tres-mal-en-France-explication_3752276.html" target="_blank">Xerfi Canal</a>, <a href="https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/cion_fin/l16cion_fin2324069_compte-rendu" target="_blank">Finance committee report</a>, <a href="https://www.assemblee-nationale.fr/dyn/16/rapports/cec/l16b2434_rapport-information" target="_blank">Parliamentary report</a></p>
-<p><br></p>
+</section>
+<section id="graphs" class="level1">
+<h1>Graphs</h1>
+<section id="coutry-time-trends" class="level2">
+<h2 class="anchored" data-anchor-id="coutry-time-trends">Coutry time trends</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ferreira_et_al_2025_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="overall-trend" class="level2">
+<h2 class="anchored" data-anchor-id="overall-trend">Overall trend</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="gallery-carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-<button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active" data-bs-interval="5000">
-<a href="kenedi_sirugue_2023/out/preview.png">
-<img src="kenedi_sirugue_2023/out/preview.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Intergenerational rank-rank relationship</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="kenedi_sirugue_2023/out/map.png">
-<img src="kenedi_sirugue_2023/out/map.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Spatial variations</p>
-</div>
-</div>
-<div class="carousel-item" data-bs-interval="5000">
-<a href="kenedi_sirugue_2023/out/geomob.png">
-<img src="kenedi_sirugue_2023/out/geomob.png" class="d-block  mx-auto border">
-</a>
-<div class="carousel-caption d-none d-md-block">
-<p class="fw-light">Intergenerational and geographic mobility</p>
+<div>
+<figure class="figure">
+<p><img src="ferreira_et_al_2025_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel1" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Prevoius</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel1" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
+</section>
+<section id="inverted-u-shape" class="level2">
+<h2 class="anchored" data-anchor-id="inverted-u-shape">Inverted U-shape</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ferreira_et_al_2025_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
 </div>
-<style>
-#hero-banner {
-  padding-top: 35px;
-  background-color: rgb(237,243,249);
-}
-#quarto-content main { 
-  margin-top: 0;
-  padding-top: 0;
-}
-html {
-  scroll-behavior: smooth;
-}
-.headline {
-font-size: 1.25em;
-font-weight: 300;
-padding-bottom: 1em;
-}
-.headline p {
-  margin: 0;
-  padding-bottom: 0.2rem;
-}
-.headline a {
-  text-decoration: none;
-}
-.headline ul li {
-  margin-bottom: 0.3em;
-}
-.carousel.card {
-  padding-top: 2em;
-}
-.carousel img {
-  width: 70%;
-  margin-bottom: 110px;
-  border-style:none!important;
-}
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  margin-bottom: 110px;
-}
-.carousel-caption {
-  padding-top: 1em;
-}
-.touch {
-}
-</style>
 
 
-</main></div>
-    </div>
-    <img src="kenedi_sirugue_2023/out/preview.png" class="about-image
-  rounded " style="width: 0px;">
-  </div>
-</div>
- <!-- /main -->
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -272,6 +274,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
