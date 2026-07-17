@@ -1,0 +1,36 @@
+
+- caption: "Introduction to the `dplyr` grammar"
+  image: "dplyr.png"
+  link: "dplyr.png"
+  
+- caption: "Practice times during classes"
+  image: "practice.png"
+  link: "practice.png"
+    
+- caption: "How (not) to lie with graphics"
+  image: "lie_with_graphics.png"
+  link: "lie_with_graphics.png"
+  
+- caption: "Introduction to OLS"
+  image: "multivariate.png"
+  link: "multivariate.png"
+  
+- caption: "Goodness of fit"
+  image: "r2.png"
+  link: "r2.png"
+  
+- caption: "Hypothesis testing"
+  image: "hypothesis_testing.png"
+  link: "hypothesis_testing.png"
+    
+- caption: "Romeo & Juliet text analysis"
+  image: "romeo_juliet_text_analysis.png"
+  link: "romeo_juliet_text_analysis.png"
+      
+- caption: "Introduction to academic research"
+  image: "introduction_research.png"
+  link: "introduction_research.png"
+  
+- caption: "Introduction to geocoded data"
+  image: "maps.png"
+  link: "maps.png"

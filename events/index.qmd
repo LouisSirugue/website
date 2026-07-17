@@ -1,0 +1,100 @@
+---
+toc: false
+format:
+  html:
+    link-external-newwindow: true
+listing: 
+  id: sample-listings
+  contents: events.yaml
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  date-format: "YYYY"
+---
+
+## Upcoming events
+
+::: {#sample-listings}
+:::
+
+## Past events
+
+::: {.callout-note collapse="true" icon=false}
+## Inequalities & Opportunities Summer School
+
+Hosted by the [University of Bari](https://www.uniba.it/en/courses/economics-finance-and-business), and co-organized with the [Luxembourg Institute of Socio-Economic Research](https://www.liser.lu/), [Sapienza University of Rome](https://www.dsge.uniroma1.it/en), the [London School of Economics](https://www.lse.ac.uk/international-inequalities), and [Queen Mary University of London](https://www.qmul.ac.uk/sef/), this summer school featured 10 lectures across 3 thematic sessions:
+
+- **Intergenerational Mobility**
+  - *Louis Sirugue (coordinator), [Francesco Bloise](https://sites.google.com/uniroma1.it/francesco-bloise), [Jan Stuhler](https://janstuhler.com/)*
+- **Social Welfare and Ethics**
+  - *[Roberto Veneziani](https://www.qmul.ac.uk/sef/staff/robertoveneziani.html) (coordinator), [Andrea Attar](https://sites.google.com/site/andreaattar), [Paolo Piacquadio](https://sites.google.com/site/paologpiacquadio/)*
+- **Inequality**
+  - *[Giorgia Menta](https://sites.google.com/view/giorgiamenta/home-page) (coordinator), [Pedro Salas-Rojo](), [Xavier Ramos](https://bse.eu/people/ramos-xavier), [Domenico Moramarco](https://www.domenicomoramarco.com/)*
+
+The detailed program is available [here](summer_school_programme.pdf).
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## Intergenerational Mobility & Migration Workshop
+
+Co-hosted by LSE's [International Inequalities Institute](https://www.lse.ac.uk/international-inequalities), [Centre for Economic Performance](https://cep.lse.ac.uk/), and [Programme on Cohesive Capitalism](https://sticerd.lse.ac.uk/cohesive-capitalism/), this event brought together researchers for 13 academic presentations across 4 thematic sessions:
+
+- Intergenerational Mobility and Elites
+- Integration and Assimilation
+- Intergenerational Mobility and the Labor Market
+- Migration: Impacts and Returns
+
+The detailed program is available [here](workshop.pdf).
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## Smoothie seminars - Spring 2026
+
+*“Accounting for intergenerational income persistence in a new cohort: Non-cognitive skills, ability and education”*<br>
+**Yuyan Jiang** (University of Cambridge)<br>
+<br>
+*“Recessions, Educational Trajectories, and Intergenerational Mobility”*<br>
+**Matías Ciaschi** (CEDLAS-UNLP)<br>
+<br>
+*“Earnings volatility in Latin America: evidence from administrative data”*<br>
+**Markus Nabernegg** (University of Giessen)<br>
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## Smoothie seminars - Winter 2026
+
+*“Grim Up North? Regional Intergenerational Mobility in Late-Victorian England”*<br>
+**Ziming Zhu** (London School of Economics)<br>
+<br>
+*“Polarising Perceptions, Converging Preferences – How Inflation Narratives Shape Inequality Beliefs and Policy Support”*<br>
+**Victoria Hünewaldt** (University of Siena)<br>
+<br>
+*“On decomposable median-based inequality measures for ordinal data”*<br>
+**Tom Gargani** (Aix-Marseille School of Economics)<br>
+<br>
+*“Attitudes, beliefs, and support for economic policies”*<br>
+**Chloé de Meulenaer** (London School of Economics)<br>
+<br>
+*“Monitoring poverty and welfare trends in data-challenging context: Recent evidence from various countries”*<br>
+**Hai-Anh Dang** (World Bank)<br>
+<br>
+*“Using trusts in the UK: income, wealth and beneficiaries”*<br>
+**Sanaya Mahajan** (London School of Economics)<br>
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## Smoothie seminars - Autumn 2025
+
+*“Shifting Attitudes Towards Inequality Among Chilean Economic Elites Following the 2019 Social Uprising”*<br>
+**Rafael Carranza** (Pontificia Universidad Católica de Chile)<br>
+<br>
+*“Family Background and Economic Mobility: Evidence from the US”*<br>
+**Alejandro Puerta Cuartas** (Universidad Carlos III)<br>
+<br>
+*“The Role of Education in Explaining Economic Persistence Across Generations”*<br>
+**Valentina Gabrielli** (Paris School of Economics)<br>
+<br>
+*“Structural Drivers of Health Inequality: Evidence from 10 Sub-Saharan Countries”*<br>
+**Mercedes Tejeria Martinez** (University of Cantabria)<br>
+:::
+
