@@ -1,0 +1,42 @@
+---
+title: "Louis Sirugue"
+image: me.png
+toc: false
+about: 
+  id: hero-heading
+  template: jolla
+  image-shape: round
+  image-width: 15em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:l.a.sirugue@lse.ac.uk
+    - icon: github
+      text: GitHub
+      href: https://github.com/LouisSirugue
+    - icon: person-vcard
+      text: ORCID
+      href: https://orcid.org/0009-0001-3687-2674
+    - icon: file-earmark-pdf
+      text: CV
+      href: https://www.louissirugue.com/cv.pdf
+---
+
+:::{#hero-heading}
+
+<center>
+Research Fellow -- London School of Economics<br>
+<i>International Inequalities Institute</i>
+</center>
+
+<blockquote style = "margin-top:1.5em">My current research focuses on global variations in **intergenerational income mobility** and on the effect of higher education **public policies** on social mobility.</blockquote>
+
+:::
+
+<center>
+<p style="font-size:10pt;margin-top:1em;">London School of Economics<br>
+Houghton Street<br>
+Center Building – 4.08<br>
+London WC2A 2AE
+</p>
+</center>

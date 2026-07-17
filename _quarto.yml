@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs  
+  
+website:
+  title: "Louis Sirugue"
+  favicon: icon.png
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Teaching"
+        href: teaching/index.qmd
+      - text: "Event organization"
+        href: events/index.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
