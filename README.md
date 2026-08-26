@@ -1,5 +1,9 @@
 # Personal website repo
 
+Compiled website in `/docs`.
+
+See `_quarto.yml` for website structure.
+
 ## Software
 
 - Quarto 1.9.36 
