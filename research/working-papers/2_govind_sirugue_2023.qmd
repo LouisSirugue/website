@@ -1,0 +1,86 @@
+---
+title: '<span style = "font-size: 18pt!important;">The screening effects of naturalization costs</span>'
+subtitle: '<a href = "https://www.dropbox.com/scl/fi/1ab4ya0yajco3ssh9aq96/Govind_Sirugue_2026_Screening_effect_naturalization.pdf?rlkey=fol3cha7fagit87l49vzxo0og&st=7kwcewbw&e=2&dl=0" target="_blank"><span style = "color:#18BC9C!important;">Latest version</span></a>, <i>with <a href = "https://sites.google.com/view/yajnagovind/home" target="_blank"><span style = "color:#18BC9C!important;">Yajna Govind</span></a>, <b>R&R at Journal of Public Economics</b></i>'
+abstract: '<span style = "color:#6C757D;">We study how changing citizenship costs affect naturalization decisions and the skill composition of naturalized immigrants. We develop a theoretical framework in which benefits from citizenship are heterogeneous and costs vary with skills. We test its predictions in a quasi-experimental setting, exploiting the abolition of compulsory conscription in France as a reduction in the citizenship costs for sons of immigrants. We find that naturalization costs are higher for the low-educated, such that compulsory conscription induced positive selection on education within benefit groups. It also led to positive selection across benefit groups, which, as shown theoretically, is not guaranteed.</span>'
+image: "govind_sirugue_2023/out/preview.png"
+about: 
+  template: solana
+  image-width: 0px
+  links:
+    - icon: file-earmark-text
+      text: Working paper
+      href: https://www.dropbox.com/scl/fi/1ab4ya0yajco3ssh9aq96/Govind_Sirugue_2026_Screening_effect_naturalization.pdf?rlkey=fol3cha7fagit87l49vzxo0og&st=7kwcewbw&e=2&dl=0
+include-before-body: 
+  text: |
+    <style>
+      .quarto-title-meta { display:none !important; visibility:hidden !important; }
+    </style>
+---
+
+<br>
+
+```{r, echo = F}
+source("carousel.R")
+carousel("gallery-carousel1", 5000, yaml.load_file("govind_sirugue_2023/carousel.yml"))
+```
+
+```{=html}
+<style>
+
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(237,243,249);
+}
+
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+font-size: 1.25em;
+font-weight: 300;
+padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 70%;
+  margin-bottom: 110px;
+  border-style:none!important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.touch {
+  
+}
+</style>
+```

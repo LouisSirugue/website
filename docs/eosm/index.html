@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equality of Opportunity and Social Mobility Policy Workshop</title>
+<meta name="description" content="A two-day workshop at the London School of Economics (12–13 November 2026) bringing together academics, policymakers, and practitioners on equality of opportunity and social mobility.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Equality of Opportunity and Social Mobility Policy Workshop">
+<meta property="og:description" content="A two-day workshop at the London School of Economics, 12–13 November 2026, fostering intersectoral dialogue on inherited inequalities.">
+<meta property="og:site_name" content="EOSM Workshop 2026">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Equality of Opportunity and Social Mobility Policy Workshop">
+<meta name="twitter:description" content="A two-day workshop at the London School of Economics, 12–13 November 2026, on equality of opportunity and social mobility.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315212b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='600' fill='%239a6b2f' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root{
+  --ink:#15212b;
+  --paper:#f5f2ec;
+  --paper-2:#ebe6db;
+  --line:#cfc7b6;
+  --brass:#9a6b2f;
+  --brass-deep:#7a5223;
+  --muted:#5b6670;
+  --maxw:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.1;letter-spacing:-0.01em}
+.section-title{font-size:clamp(1.8rem,3.5vw,2.7rem);margin-bottom:26px;color:var(--brass-deep)}
+p{color:var(--muted);max-width:62ch}
+
+/* ---- Nav ---- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,242,236,.88);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;letter-spacing:-0.01em}
+.brand span{color:var(--brass)}
+.navlinks{display:flex;gap:28px;list-style:none}
+.navlinks a{font-size:.86rem;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+.navlinks a:hover{color:var(--brass)}
+.navtoggle{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+
+/* ---- Hero ---- */
+.hero{padding:80px 0 72px;border-top:none}
+.hero .meta{font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.1em;color:var(--brass-deep);margin-bottom:26px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);max-width:18ch;margin-bottom:28px}
+.hero p{font-size:1.12rem;max-width:54ch;margin-bottom:38px}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:14px 28px;font-size:.9rem;font-weight:500;
+  text-decoration:none;border:1px solid var(--ink);letter-spacing:.02em;
+  transition:background .15s,color .15s;
+}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--brass-deep);border-color:var(--brass-deep)}
+.btn-ghost{color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--paper-2)}
+
+/* ---- About ---- */
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:start}
+.facts{border-left:2px solid var(--brass);padding-left:24px}
+.fact{padding:14px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:none}
+.fact dt{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:4px}
+.fact dd{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--ink)}
+.partners{margin-top:32px;color:var(--muted);font-size:.95rem;max-width:none}
+.partners a{color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--line);transition:border-color .15s,color .15s}
+.partners a:hover{color:var(--brass);border-color:var(--brass)}
+#map{width:100%;height:340px;border:1px solid var(--line);filter:saturate(.82)}
+#map.map-fallback{display:flex;align-items:center;justify-content:center;background:var(--paper-2);filter:none}
+.map-fallback-inner{text-align:center;padding:24px}
+.map-fallback-title{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--ink);margin-bottom:6px}
+.map-fallback-addr{font-size:.9rem;color:var(--muted);margin-bottom:14px}
+.map-fallback-link{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--line)}
+.map-fallback-link:hover{color:var(--brass);border-color:var(--brass)}
+.map-caption{margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.04em;color:var(--brass-deep);text-transform:uppercase;max-width:none}
+.leaflet-container{background:var(--paper-2);font-family:'Inter',sans-serif}
+/* ---- Milestone timeline ---- */
+.milestones{margin-top:44px}
+.ms-track{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px}
+.ms-track::before{content:"";position:absolute;top:11px;left:0;right:0;height:2px;background:var(--line)}
+.ms-track .ms-progress{position:absolute;top:11px;left:0;height:2px;background:var(--brass);z-index:1}
+.ms{position:relative;text-align:center;padding:0 8px}
+.ms .dot{position:relative;z-index:2;width:24px;height:24px;border-radius:50%;background:var(--paper);border:2px solid var(--line);margin:0 auto 16px}
+.ms.done .dot{border-color:var(--brass);background:var(--brass)}
+.ms.current .dot{border-color:var(--brass);background:var(--paper);box-shadow:0 0 0 5px color-mix(in srgb, var(--brass) 22%, transparent)}
+.ms .ms-date{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.06em;color:var(--brass-deep);margin-bottom:5px}
+.ms .ms-label{font-family:'Fraunces',serif;font-size:1.02rem;color:var(--ink);line-height:1.2}
+.ms.current .ms-label{color:var(--brass-deep)}
+.ms .ms-tag{display:inline-block;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);border:1px solid var(--brass);border-radius:2px;padding:1px 6px}
+@media(max-width:680px){
+  .ms-track{grid-template-columns:1fr;gap:0}
+  .ms-track::before{left:11px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .ms-track .ms-progress{left:11px;width:2px!important;height:auto;top:0}
+  .ms{text-align:left;display:grid;grid-template-columns:24px 1fr;column-gap:16px;align-items:start;padding:0 0 28px}
+  .ms .dot{margin:0}
+  .ms .ms-body{align-self:start}
+  .ms .ms-label{white-space:nowrap}
+  .ms .ms-tag{margin-top:6px}
+}
+
+/* ---- People cards (speakers + committee) ---- */
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.committee-grid{display:grid;grid-template-columns:repeat(auto-fill,240px);gap:28px;justify-content:start}
+/* speakers grid: wrapping rows of fixed-width cards */
+.speaker-carousel{display:grid;grid-template-columns:repeat(auto-fill,240px);gap:24px;justify-content:start}
+.speaker-carousel .person{width:auto}
+.person{background:var(--paper-2);border:1px solid var(--line);padding:26px}
+.person .ph{width:100%;aspect-ratio:1;background:var(--line);margin-bottom:18px;object-fit:cover;display:block}
+.person a.photo{display:block;overflow:hidden}
+.person a.photo .ph{transition:opacity .2s}
+.person a.photo:hover .ph{opacity:.82}
+.committee-contact{margin-top:40px;font-family:'IBM Plex Mono',monospace;font-size:.82rem;letter-spacing:.04em;color:var(--brass-deep)}
+.committee-contact a{color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--line)}
+.committee-contact a:hover{color:var(--brass)}
+.person h3{font-size:1.15rem;margin-bottom:4px}
+.person h3 a{color:inherit;text-decoration:none}
+.person h3 a:hover{color:var(--brass-deep)}
+.person .role{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.04em;color:var(--brass-deep);text-transform:uppercase;line-height:1.5}
+.person .org{font-size:.86rem;color:var(--muted);margin-top:8px}
+
+/* ---- Programme (proportional timeline) ---- */
+/* Timeline 09:00–20:00 = 660 min. 1 min = var(--ppm) px. */
+.prog{--ppm:3px;--t-start:540;margin-top:8px}
+.prog.overview{--ppm:1.4px}
+.prog.overview .slot{justify-content:flex-start;padding-top:6px;padding-bottom:6px}
+.prog.overview .slot .s-meta{margin-bottom:2px;gap:7px}
+.prog.overview .slot .s-title{font-size:.98rem;line-height:1.12}
+.prog.overview .slot .s-time{font-size:.72rem}
+.prog.overview .slot .s-type{font-size:.58rem;padding:1px 5px}
+/* single-line simple slots in overview: time + title on one row, left/top aligned */
+.prog.overview .slot.break,
+.prog.overview .slot.ov-inline{flex-direction:row;align-items:baseline;justify-content:flex-start;gap:10px;flex-wrap:wrap}
+.prog.overview .slot.break .s-meta,
+.prog.overview .slot.ov-inline .s-meta{margin-bottom:0}
+.prog.overview .slot.break .s-title,
+.prog.overview .slot.ov-inline .s-title{font-size:.92rem}
+/* overview: content returns as a hover tooltip (overlay), not inline */
+.prog.overview .slot{overflow:visible}
+.prog.overview .tip{
+  position:absolute;left:0;top:100%;margin-top:4px;z-index:40;
+  width:min(320px,72vw);background:var(--ink);color:var(--paper);
+  padding:13px 15px;border:1px solid var(--brass);border-radius:6px;
+  box-shadow:0 8px 24px rgba(21,33,43,.22);
+  opacity:0;visibility:hidden;transform:translateY(-4px);
+  transition:opacity .15s,transform .15s,visibility .15s;
+}
+.prog.overview .day-col.right .tip{right:0;left:auto}
+.prog.overview .slot:hover{z-index:50}
+.prog.overview .slot:hover .tip{opacity:1;visibility:visible;transform:translateY(0)}
+.prog.overview .tip::before{content:"";position:absolute;left:0;right:0;top:-6px;height:6px}
+.prog.overview .tip strong{color:var(--paper)}
+.prog.overview .tip li{color:#e8e4db}
+.prog.overview .tip .tip-line{color:#c7cdd3}
+.prog.overview .tip a{color:#e7c9a0;border-bottom-color:rgba(231,201,160,.35)}
+.prog.overview .tip a:hover{color:#fff;border-color:#fff}
+/* toggle */
+.prog-modes{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.prog-modes .mode-label{color:var(--muted);transition:color .2s;cursor:pointer;user-select:none}
+.prog-modes .mode-label.active{color:var(--brass-deep)}
+.prog-toggle{position:relative;width:52px;height:26px;border:1px solid var(--line);border-radius:13px;background:var(--paper-2);cursor:pointer;flex:0 0 auto;padding:0}
+.prog-toggle .knob{position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--brass);transition:transform .2s}
+.prog-toggle.on .knob{transform:translateX(26px)}
+.prog-head{display:grid;grid-template-columns:1fr 56px 1fr;gap:0;margin-bottom:14px}
+.prog-head .day-head{padding-bottom:12px;border-bottom:2px solid var(--brass)}
+.prog-head .day-head:first-child{padding-right:24px;text-align:right}
+.prog-head .day-head:last-child{padding-left:24px;text-align:left}
+.day-head .day-arrow{font-family:'IBM Plex Mono',monospace;color:var(--brass)}
+.day-head .d-text{display:flex;flex-direction:column}
+.prog-head .day-head:first-child .d-text{text-align:right}
+.prog-head .day-head:last-child .d-text{text-align:left}
+.day-head .d-num{display:block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-deep)}
+.day-head .d-date{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--ink)}
+.prog-body{position:relative;display:grid;grid-template-columns:1fr 56px 1fr;gap:0}
+.day-col{position:relative}
+/* center time axis with ticks on both inner edges */
+.time-axis{position:relative;z-index:1}
+.time-axis .hr{position:absolute;left:0;right:0;top:calc(var(--t) * var(--ppm));text-align:center;font-family:'IBM Plex Mono',monospace;font-size:.66rem;color:var(--brass-deep);transform:translateY(-50%);padding:2px 0}
+.time-axis .hr::before,.time-axis .hr::after{content:"";position:absolute;top:50%;width:7px;border-top:1px solid var(--brass)}
+.time-axis .hr::before{left:0}
+.time-axis .hr::after{right:0}
+/* session block, positioned absolutely by top/height computed inline */
+.slot{position:absolute;left:0;right:0;display:flex;flex-direction:column;justify-content:flex-start;
+  top:calc(var(--t) * var(--ppm));height:calc(var(--d) * var(--ppm));
+  padding:8px 14px;border:1px solid var(--line);
+  background:color-mix(in srgb, currentColor 9%, var(--paper));
+  border-left:3px solid currentColor;cursor:default;overflow:hidden}
+.slot.break{justify-content:center}
+.day-col.left .slot{margin-right:8px}
+.day-col.right .slot{margin-left:8px}
+.slot .s-meta{display:flex;align-items:center;gap:9px;margin-bottom:5px;flex-wrap:wrap}
+.slot .s-time{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--muted)}
+.slot .s-title{font-family:'Fraunces',serif;font-size:1.18rem;color:var(--ink);line-height:1.2}
+.s-type{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;border-radius:2px;white-space:nowrap}
+.slot.break{background:transparent;border-style:dashed;border-left-width:1px}
+.slot.break .s-title{font-family:'Inter',sans-serif;font-size:.95rem;color:var(--muted)}
+.slot.short{padding:3px 14px;min-height:20px}
+.slot.short .s-title{font-size:.84rem}
+.slot.short .s-meta{margin-bottom:1px}
+.slot.short .s-time{font-size:.62rem}
+.slot.short .s-type{display:none}
+.slot.tiny{justify-content:center;padding:2px 14px}
+.slot.tiny .s-meta{display:none}
+.slot.tiny .s-title{font-size:.74rem}
+.slot.fit{height:auto;min-height:0}
+.t-keynote{color:#5a6b3a}
+.t-academic{color:#3a5a8a}
+.t-policy{color:#7a5223}
+.t-practitioner{color:#6b4a7a}
+.t-paper{color:#3a5a8a}
+.t-welcome{color:#5a6b3a}
+.t-reception{color:#5a6b3a}
+.t-break{color:var(--muted)}
+/* inline session content (formerly tooltip) */
+.tip{margin-top:9px;font-size:.88rem;line-height:1.45;text-align:left;color:var(--muted)}
+.tip .tip-role{font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brass-deep);display:block;margin-bottom:6px}
+.tip strong{color:var(--ink);font-weight:600}
+.tip ul{list-style:none;margin:0;padding:0}
+.tip li{position:relative;padding-left:15px;margin:4px 0;color:var(--ink)}
+.tip li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;background:var(--brass);border-radius:50%}
+.tip .tip-line{margin-top:4px;color:var(--muted)}
+.tip ul + .tip-line{margin-top:9px}
+.tip a{color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--line)}
+.tip a:hover{color:var(--brass);border-color:var(--brass)}
+.prog-note{margin-top:24px;font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.prog{position:relative}
+.prog-fade{display:none}
+.prog-topbar{display:none}
+
+/* ---- Footer logos ---- */
+.footer-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:34px;margin-bottom:30px}
+.footer-logos a{display:inline-flex;align-items:center}
+.footer-logos img{height:38px;width:auto;opacity:.7;transition:opacity .2s;filter:grayscale(1)}
+.footer-logos a:hover img{opacity:1;filter:grayscale(0)}
+
+/* ---- Registration ---- */
+.register{background:var(--ink);color:var(--paper)}
+.register .section-title{color:#d6a45e}
+.register p{color:#b4bcc3}
+.register p.submit-note{font-size:1.02rem;color:var(--ink);background:var(--paper-2);border-left:3px solid var(--brass);border-radius:8px;padding:20px 24px;max-width:60ch}
+.submit-note a{color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--line);font-weight:500}
+.submit-note a:hover{color:var(--brass);border-color:var(--brass)}
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.tier{border:1px solid #2c3a45;padding:30px}
+.tier.featured{border-color:var(--brass);background:#1b2935}
+.tier .name{font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#d6a45e;margin-bottom:14px}
+.tier .price{font-family:'Fraunces',serif;font-size:2.2rem;color:var(--paper);margin-bottom:6px}
+.tier ul{list-style:none;margin:18px 0 26px}
+.tier li{font-size:.9rem;color:#b4bcc3;padding:6px 0;border-bottom:1px solid #2c3a45}
+.tier .btn-primary{background:var(--brass);border-color:var(--brass);color:var(--ink);width:100%;text-align:center}
+.tier .btn-primary:hover{background:#d6a45e;border-color:#d6a45e}
+
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:.82rem;color:var(--muted)}
+.footer-updated{margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--line)}
+
+/* ---- Responsive ---- */
+@media(max-width:980px){}
+@media(max-width:860px){
+  .navlinks{display:none}
+  .navtoggle{display:block}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .people-grid,.tier-grid{grid-template-columns:1fr}
+  .prog-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .prog-scroll::-webkit-scrollbar{display:none}
+  .prog-head,.prog-body{min-width:560px}
+  .prog-topbar{display:block;overflow-x:auto;overflow-y:hidden;height:10px;margin-bottom:10px;
+    scrollbar-width:thin;scrollbar-color:var(--line) var(--paper-2)}
+  .prog-topbar::-webkit-scrollbar{height:8px}
+  .prog-topbar::-webkit-scrollbar-track{background:var(--paper-2)}
+  .prog-topbar::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+  .prog-topbar::-webkit-scrollbar-thumb:hover{background:var(--brass)}
+  .prog-topbar-inner{height:1px}
+  .slot .s-title{font-size:.82rem}
+  .prog-fade{display:block;position:absolute;top:0;width:40px;height:100%;
+    pointer-events:none;z-index:5;transition:opacity .3s}
+  .prog-fade-l{left:0;background:linear-gradient(to left, transparent, var(--paper))}
+  .prog-fade-r{right:0;background:linear-gradient(to right, transparent, var(--paper))}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">EOSM <span>Workshop</span></div>
+    <ul class="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#committee">Organising committee</a></li>
+    </ul>
+    <button class="navtoggle" aria-label="Menu">&#9776;</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="meta">12&ndash;13 November 2026 &middot; London School of Economics</div>
+    <h1>Equality of Opportunity and Social Mobility Policy Workshop</h1>
+    <p>Fostering intersectoral dialogue on inherited inequalities.</p>
+    <div class="cta-row">
+      <a href="#programme" class="btn btn-primary">View programme</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div>
+        <p>The Equality of Opportunity and Social Mobility Policy Workshop will bring together academics, policymakers, and practitioners to explore cross-sectoral responses to the challenges posed by inherited inequalities.</p>
+        <p style="margin-top:16px">Across a rich two-day programme at the London School of Economics, policy insight, practical experience, and research-frontier knowledge will interweave to help shape the future of the field.</p>
+        <p class="partners">This event is organised by the <a href="https://www.lse.ac.uk/international-inequalities" target="_blank" rel="noopener">International Inequalities Institute</a> at the London School of Economics, in partnership with the <a href="https://www.cepal.org/en" target="_blank" rel="noopener">Economic Commission for Latin America and the Caribbean</a>, the <a href="https://www.ebrd.com/" target="_blank" rel="noopener">European Bank for Reconstruction and Development</a>, the <a href="https://www.iadb.org/" target="_blank" rel="noopener">Inter-American Development Bank</a>, the <a href="https://www.oecd.org/en.html" target="_blank" rel="noopener">Organisation for Economic Co-operation and Development</a>, and the <a href="https://www.worldbank.org/" target="_blank" rel="noopener">World Bank</a>.</p>
+        <p class="partners">This event was made possible thanks to funding from the <a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb" target="_blank" rel="noopener">Atlantic Fellows for Social and Economic Equity</a> (AFSEE) programme.</p>
+      </div>
+      <div>
+        <div id="map" role="img" aria-label="Map showing the London School of Economics"></div>
+        <p class="map-caption">London School of Economics &middot; Houghton Street, London WC2A 2AE</p>
+      </div>
+    </div>
+
+    <div class="milestones">
+      <div class="ms-track">
+        <div class="ms-progress" style="width:62.5%"></div>
+        <div class="ms done">
+          <div class="dot"></div>
+          <div class="ms-body">
+            <div class="ms-date">20 July 2026</div>
+            <div class="ms-label">Call for papers opens</div>
+          </div>
+        </div>
+        <div class="ms done">
+          <div class="dot"></div>
+          <div class="ms-body">
+            <div class="ms-date">21 August 2026</div>
+            <div class="ms-label">Submission deadline</div>
+          </div>
+        </div>
+        <div class="ms current">
+          <div class="dot"></div>
+          <div class="ms-body">
+            <div class="ms-date">11 September 2026</div>
+            <div class="ms-label">Admission decisions</div>
+            <span class="ms-tag">Under review</span>
+          </div>
+        </div>
+        <div class="ms">
+          <div class="dot"></div>
+          <div class="ms-body">
+            <div class="ms-date">12&ndash;13 Nov 2026</div>
+            <div class="ms-label">Workshop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers">
+  <div class="wrap">
+    <h2 class="section-title">Speakers</h2>
+    <div class="speaker-carousel">
+      <div class="person">
+        <a class="photo" href="https://www.oecd.org/en/topics/inclusion-and-equality.html" target="_blank" rel="noopener"><img class="ph" src="img/carlotta-balestra.jpg" alt="Dr Carlotta Balestra"></a>
+        <h3><a href="https://www.oecd.org/en/topics/inclusion-and-equality.html" target="_blank" rel="noopener">Dr Carlotta Balestra</a></h3>
+        <div class="role">Head of the Inequalities Unit</div>
+        <div class="org">OECD</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.unicaldine.it/" target="_blank" rel="noopener"><img class="ph" src="img/paolo-brunori.jpg" alt="Dr Paolo Brunori"></a>
+        <h3><a href="https://www.unicaldine.it/" target="_blank" rel="noopener">Dr Paolo Brunori</a></h3>
+        <div class="role">Associate Professor of Public Economics</div>
+        <div class="org">University of Florence</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/faith-chitawo" target="_blank" rel="noopener"><img class="ph" src="img/faith-chitawo.jpg" alt="Faith Chitawo"></a>
+        <h3><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/faith-chitawo" target="_blank" rel="noopener">Faith Chitawo</a></h3>
+        <div class="role">AFSEE Fellow</div>
+        <div class="org">Atlantic Fellows for Social and Economic Equity</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/lauren-diaz-arias" target="_blank" rel="noopener"><img class="ph" src="img/lauren-diaz-arias.jpg" alt="Lauren Díaz Arias"></a>
+        <h3><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/lauren-diaz-arias" target="_blank" rel="noopener">Lauren Díaz Arias</a></h3>
+        <div class="role">AFSEE Fellow</div>
+        <div class="org">Atlantic Fellows for Social and Economic Equity</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.rafadehoyos.com/" target="_blank" rel="noopener"><img class="ph" src="img/rafael-de-hoyos.jpg" alt="Dr Rafael de Hoyos"></a>
+        <h3><a href="https://www.rafadehoyos.com/" target="_blank" rel="noopener">Dr Rafael de Hoyos</a></h3>
+        <div class="role">Economic Advisor in the Social Sector</div>
+        <div class="org">Inter-American Development Bank</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.cepal.org/en/work-areas/social-development" target="_blank" rel="noopener"><img class="ph" src="img/andres-espejo.jpg" alt="Andrés Espejo"></a>
+        <h3><a href="https://www.cepal.org/en/work-areas/social-development" target="_blank" rel="noopener">Andrés Espejo</a></h3>
+        <div class="role">Economic Affairs Officer</div>
+        <div class="org">Economic Commission for Latin America and the Caribbean &mdash; Social Development Division</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener"><img class="ph" src="img/francisco-ferreira.jpg" alt="Prof Francisco H. G. Ferreira"></a>
+        <h3><a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener">Prof Francisco H. G. Ferreira</a></h3>
+        <div class="role">Amartya Sen Professor of Inequality Studies &middot; Director, III</div>
+        <div class="org">London School of Economics International Inequalities Institute</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://sites.google.com/view/mjantti/home" target="_blank" rel="noopener"><img class="ph" src="img/markus-jantti.jpg" alt="Prof Markus Jäntti"></a>
+        <h3><a href="https://sites.google.com/view/mjantti/home" target="_blank" rel="noopener">Prof Markus Jäntti</a></h3>
+        <div class="role">Professor of Economics</div>
+        <div class="org">Stockholm University</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://sites.google.com/site/zskoczan/home" target="_blank" rel="noopener"><img class="ph" src="img/zsoka-koczan.jpg" alt="Dr Zsoka Koczan"></a>
+        <h3><a href="https://sites.google.com/site/zskoczan/home" target="_blank" rel="noopener">Dr Zsoka Koczan</a></h3>
+        <div class="role">Associate Director &amp; Lead Economist</div>
+        <div class="org">European Bank for Reconstruction and Development</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://sites.google.com/view/sonyakrutikova/home" target="_blank" rel="noopener"><img class="ph" src="img/sonya-krutikova.jpg" alt="Prof Sonya Krutikova"></a>
+        <h3><a href="https://sites.google.com/view/sonyakrutikova/home" target="_blank" rel="noopener">Prof Sonya Krutikova</a></h3>
+        <div class="role">Professor of Economics, Manchester &middot; Deputy Research Director, IFS</div>
+        <div class="org">University of Manchester; Institute for Fiscal Studies</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://profiles.ucl.ac.uk/48151-lindsey-macmillan" target="_blank" rel="noopener"><img class="ph" src="img/lindsey-macmillan.jpg" alt="Prof Lindsey Macmillan"></a>
+        <h3><a href="https://profiles.ucl.ac.uk/48151-lindsey-macmillan" target="_blank" rel="noopener">Prof Lindsey Macmillan</a></h3>
+        <div class="role">Professor of Economics, UCL &middot; Founding Director, CEPEO</div>
+        <div class="org">University College London; Centre for Education Policy and Equalising Opportunities</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://sites.google.com/view/danielmahler/" target="_blank" rel="noopener"><img class="ph" src="img/daniel-gerszon-mahler.jpg" alt="Dr Daniel Gerszon Mahler"></a>
+        <h3><a href="https://sites.google.com/view/danielmahler/" target="_blank" rel="noopener">Dr Daniel Gerszon Mahler</a></h3>
+        <div class="role">Senior Economist</div>
+        <div class="org">The World Bank</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://sites.google.com/site/martinnybom/home" target="_blank" rel="noopener"><img class="ph" src="img/martin-nybom.jpg" alt="Prof Martin Nybom"></a>
+        <h3><a href="https://sites.google.com/site/martinnybom/home" target="_blank" rel="noopener">Prof Martin Nybom</a></h3>
+        <div class="role">Researcher, IFAU &middot; Professor of Economics, Uppsala</div>
+        <div class="org">IFAU; Uppsala University</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/ida-thien" target="_blank" rel="noopener"><img class="ph" src="img/ida-thien.jpg" alt="Ida Thien"></a>
+        <h3><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/ida-thien" target="_blank" rel="noopener">Ida Thien</a></h3>
+        <div class="role">AFSEE Fellow</div>
+        <div class="org">Atlantic Fellows for Social and Economic Equity</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMME -->
+<section id="programme">
+  <div class="wrap">
+    <h2 class="section-title">Preliminary programme</h2>
+    <div class="prog-modes">
+      <span class="mode-label mode-detailed active">Detailed view</span>
+      <button class="prog-toggle" role="switch" aria-checked="false" aria-label="Toggle between detailed view and overview"><span class="knob"></span></button>
+      <span class="mode-label mode-overview">Overview</span>
+    </div>
+    <div class="prog">
+      <div class="prog-topbar" aria-hidden="true"><div class="prog-topbar-inner"></div></div>
+      <div class="prog-scroll">
+      <div class="prog-head">
+        <div class="day-head"><div class="d-text"><span class="d-num"><span class="day-arrow">&larr;</span> Day 1</span><span class="d-date">Thu 12 November</span></div></div>
+        <div class="axis-head"></div>
+        <div class="day-head"><div class="d-text"><span class="d-num">Day 2 <span class="day-arrow">&rarr;</span></span><span class="d-date">Fri 13 November</span></div></div>
+      </div>
+
+      <div class="prog-body" style="height:calc(660 * var(--ppm))">
+        <!-- DAY 1 -->
+        <div class="day-col left">
+          <div class="slot break" style="--t:240.0;--d:30.0"><div class="s-meta"><span class="s-time">13:00</span></div><div class="s-title">Registration &amp; coffee</div></div>
+          <div class="slot ov-inline" style="--t:270.0;--d:20.0;color:#5a6b3a">
+            <div class="s-meta"><span class="s-time">13:30 &ndash; 13:50</span><span class="s-type t-welcome">Welcome</span></div>
+            <div class="s-title">Welcome &amp; release of GEOM 2.0</div>
+          </div>
+          <div class="slot" style="--t:290.0;--d:60.0;color:#5a6b3a">
+            <div class="s-meta"><span class="s-time">13:50 &ndash; 14:50</span><span class="s-type t-keynote">Keynote</span></div>
+            <div class="s-title">Keynote lecture</div>
+            <div class="tip">Title: to be announced.<br>Speaker: <a href="https://sites.google.com/view/mjantti/home" target="_blank" rel="noopener">Prof Markus Jäntti</a>, Stockholm University.<br>Chair: <a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener">Prof Francisco H. G. Ferreira</a>, LSE.</div>
+          </div>
+          <div class="slot break empty" style="--t:350.0;--d:15.0"></div>
+          <div class="slot" style="--t:365.0;--d:100.0;color:#7a5223">
+            <div class="s-meta"><span class="s-time">15:05 &ndash; 16:45</span><span class="s-type t-policy">Policy panel</span></div>
+            <div class="s-title">Mobility and Opportunity around the World</div>
+            <div class="tip"><ul><li><a href="https://www.oecd.org/en/topics/inclusion-and-equality.html" target="_blank" rel="noopener">Dr Carlotta Balestra</a>, OECD</li><li><a href="https://sites.google.com/site/zskoczan/home" target="_blank" rel="noopener">Dr Zsoka Koczan</a>, EBRD</li><li><a href="https://sites.google.com/view/danielmahler/" target="_blank" rel="noopener">Dr Daniel Gerszon Mahler</a>, World Bank</li></ul><div class="tip-line">Discussant: <a href="https://www.pedrosalasrojo.com/" target="_blank" rel="noopener">Dr Pedro Salas-Rojo</a>, CUNEF</div><div class="tip-line">Chair: <a href="https://persone.ict.uniba.it/rubrica/vitorocco.peragine" target="_blank" rel="noopener">Prof Vito Peragine</a></div></div>
+          </div>
+          <div class="slot break" style="--t:465.0;--d:30.0"><div class="s-meta"><span class="s-time">16:45</span></div><div class="s-title">Coffee break</div></div>
+          <div class="slot" style="--t:495.0;--d:90.0;color:#3a5a8a">
+            <div class="s-meta"><span class="s-time">17:15 &ndash; 18:45</span><span class="s-type t-paper">Paper session</span></div>
+            <div class="s-title">Academic paper presentations I</div>
+            <div class="tip">Submissions under review.</div>
+          </div>
+          <div class="slot" style="--t:585.0;--d:75.0;color:#5a6b3a">
+            <div class="s-meta"><span class="s-time">18:45 &ndash; 20:00</span><span class="s-type t-reception">Reception</span></div>
+            <div class="s-title">Reception &amp; poster session</div>
+            <div class="tip">Submissions under review.</div>
+          </div>
+        </div>
+
+        <!-- TIME AXIS -->
+        <div class="time-axis">
+          <div class="hr" style="--t:0.0">09:00</div>
+          <div class="hr" style="--t:60.0">10:00</div>
+          <div class="hr" style="--t:120.0">11:00</div>
+          <div class="hr" style="--t:180.0">12:00</div>
+          <div class="hr" style="--t:240.0">13:00</div>
+          <div class="hr" style="--t:300.0">14:00</div>
+          <div class="hr" style="--t:360.0">15:00</div>
+          <div class="hr" style="--t:420.0">16:00</div>
+          <div class="hr" style="--t:480.0">17:00</div>
+          <div class="hr" style="--t:540.0">18:00</div>
+          <div class="hr" style="--t:600.0">19:00</div>
+          <div class="hr" style="--t:660.0">20:00</div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="day-col right">
+          <div class="slot break" style="--t:0.0;--d:30.0"><div class="s-meta"><span class="s-time">09:00</span></div><div class="s-title">Registration &amp; coffee</div></div>
+          <div class="slot" style="--t:30.0;--d:100.0;color:#7a5223">
+            <div class="s-meta"><span class="s-time">09:30 &ndash; 11:10</span><span class="s-type t-policy">Policy panel</span></div>
+            <div class="s-title">Mobility and Opportunity in the Global South</div>
+            <div class="tip"><ul><li><a href="https://www.cepal.org/en/work-areas/social-development" target="_blank" rel="noopener">Andrés Espejo</a>, ECLAC</li><li><a href="https://www.rafadehoyos.com/" target="_blank" rel="noopener">Dr Rafael de Hoyos</a>, IADB</li><li>More panelists TBA</li></ul><div class="tip-line">Discussant: <a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2020/andrea-encalada-garcia" target="_blank" rel="noopener">Andrea Encalada</a>, AFSEE</div><div class="tip-line">Chair: <a href="https://sites.google.com/view/hxavierjara/home" target="_blank" rel="noopener">Dr H. Xavier Jara</a>, LSE</div></div>
+          </div>
+          <div class="slot break empty" style="--t:130.0;--d:15.0"></div>
+          <div class="slot" style="--t:145.0;--d:80.0;color:#3a5a8a">
+            <div class="s-meta"><span class="s-time">11:25 &ndash; 12:45</span><span class="s-type t-academic">Academic panel</span></div>
+            <div class="s-title">Interactions Between Mobility and Opportunity</div>
+            <div class="tip"><ul><li><a href="https://www.unicaldine.it/" target="_blank" rel="noopener">Dr Paolo Brunori</a>, University of Florence</li><li><a href="https://sites.google.com/view/sonyakrutikova/home" target="_blank" rel="noopener">Prof Sonya Krutikova</a>, University of Manchester, IFS</li><li><a href="https://profiles.ucl.ac.uk/48151-lindsey-macmillan" target="_blank" rel="noopener">Prof Lindsey Macmillan</a>, UCL</li><li><a href="https://sites.google.com/site/martinnybom/home" target="_blank" rel="noopener">Prof Martin Nybom</a>, Uppsala University, IFAU</li></ul><div class="tip-line">Discussant: <a href="https://www.louissirugue.com/" target="_blank" rel="noopener">Dr Louis Sirugue</a>, LSE</div><div class="tip-line">Chair: TBD</div></div>
+          </div>
+          <div class="slot break" style="--t:225.0;--d:75.0"><div class="s-meta"><span class="s-time">12:45</span></div><div class="s-title">Lunch</div></div>
+          <div class="slot" style="--t:300.0;--d:90.0;color:#6b4a7a">
+            <div class="s-meta"><span class="s-time">14:00 &ndash; 15:30</span><span class="s-type t-practitioner">Practitioners panel</span></div>
+            <div class="s-title">Mobility and Opportunity: Lessons and Stories from the Ground</div>
+            <div class="tip"><ul><li><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/faith-chitawo" target="_blank" rel="noopener">Faith Chitawo</a>, AFSEE Fellow</li><li><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/lauren-diaz-arias" target="_blank" rel="noopener">Lauren Díaz Arias</a>, AFSEE Fellow</li><li><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/ida-thien" target="_blank" rel="noopener">Ida Thien</a>, AFSEE Fellow</li></ul><div class="tip-line">Discussant: <a href="https://www.lse.ac.uk/people/aaron-reeves" target="_blank" rel="noopener">Prof Aaron Reeves</a>, LSE</div><div class="tip-line">Chair: <a href="https://www.lse.ac.uk/people/armine-ishkanian" target="_blank" rel="noopener">Prof Armine Ishkanian</a>, AFSEE &ndash; LSE</div></div>
+          </div>
+          <div class="slot break" style="--t:390.0;--d:30.0"><div class="s-meta"><span class="s-time">15:30</span></div><div class="s-title">Coffee break</div></div>
+          <div class="slot" style="--t:420.0;--d:90.0;color:#3a5a8a">
+            <div class="s-meta"><span class="s-time">16:00 &ndash; 17:30</span><span class="s-type t-paper">Paper session</span></div>
+            <div class="s-title">Academic paper presentations II</div>
+            <div class="tip">Submissions under review.</div>
+          </div>
+          <div class="slot break fit" style="--t:510.0"><div class="s-meta"><span class="s-time">17:30 &ndash; 17:40</span></div><div class="s-title">Closing remarks</div></div>
+        </div>
+      </div>
+      </div>
+      <div class="prog-fade prog-fade-l" aria-hidden="true"></div>
+      <div class="prog-fade prog-fade-r" aria-hidden="true"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORGANISING COMMITTEE -->
+<section id="committee">
+  <div class="wrap">
+    <h2 class="section-title">Organising committee</h2>
+    <div class="committee-grid">
+      <div class="person">
+        <a class="photo" href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener"><img class="ph" src="img/francisco-ferreira.jpg" alt="Prof Francisco H. G. Ferreira"></a>
+        <h3><a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener">Prof Francisco H. G. Ferreira</a></h3>
+        <div class="role">Co-lead organiser</div>
+        <div class="org">Amartya Sen Professor of Inequality Studies &amp; Director, LSE International Inequalities Institute</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.louissirugue.com/" target="_blank" rel="noopener"><img class="ph" src="img/louis-sirugue.jpg" alt="Dr Louis Sirugue"></a>
+        <h3><a href="https://www.louissirugue.com/" target="_blank" rel="noopener">Dr Louis Sirugue</a></h3>
+        <div class="role">Co-lead organiser &middot; Academic coordinator</div>
+        <div class="org">Research Fellow, LSE International Inequalities Institute</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://www.unicaldine.it/" target="_blank" rel="noopener"><img class="ph" src="img/paolo-brunori.jpg" alt="Dr Paolo Brunori"></a>
+        <h3><a href="https://www.unicaldine.it/" target="_blank" rel="noopener">Dr Paolo Brunori</a></h3>
+        <div class="role">Policy coordinator</div>
+        <div class="org">Associate Professor of Public Economics, University of Florence</div>
+      </div>
+      <div class="person">
+        <a class="photo" href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/ida-thien" target="_blank" rel="noopener"><img class="ph" src="img/ida-thien.jpg" alt="Ida Thien"></a>
+        <h3><a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb/fellows/2025/ida-thien" target="_blank" rel="noopener">Ida Thien</a></h3>
+        <div class="role">Practitioners coordinator</div>
+        <div class="org">AFSEE Fellow, Atlantic Fellows for Social and Economic Equity</div>
+      </div>
+    </div>
+    <p class="committee-contact">Contact: <a href="mailto:l.a.sirugue@lse.ac.uk">l.a.sirugue@lse.ac.uk</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-logos">
+      <a href="https://www.lse.ac.uk/international-inequalities" target="_blank" rel="noopener"><img src="img/logos/iii.png" alt="LSE International Inequalities Institute"></a>
+      <a href="https://afsee.atlanticfellows.lse.ac.uk/en-gb" target="_blank" rel="noopener"><img src="img/logos/afsee.png" alt="AFSEE"></a>
+      <a href="https://www.ebrd.com/" target="_blank" rel="noopener"><img src="img/logos/ebrd.png" alt="EBRD"></a>
+      <a href="https://www.iadb.org/" target="_blank" rel="noopener"><img src="img/logos/iadb.png" alt="IADB"></a>
+      <a href="https://www.oecd.org/en.html" target="_blank" rel="noopener"><img src="img/logos/oecd.png" alt="OECD"></a>
+    </div>
+    &copy; 2026 International Inequalities Institute &middot; Opportunity &amp; Mobility Research Programme &middot; London School of Economics
+    <div class="footer-updated">Last updated 24 August 2026</div>
+  </div>
+</footer>
+
+<script>
+document.querySelector('.navtoggle').addEventListener('click',()=>{
+  const l=document.querySelector('.navlinks');
+  l.style.display=l.style.display==='flex'?'none':'flex';
+  l.style.flexDirection='column';l.style.position='absolute';
+  l.style.top='68px';l.style.right='32px';l.style.background='var(--paper)';
+  l.style.padding='20px';l.style.border='1px solid var(--line)';
+});
+
+(function(){
+  var el=document.getElementById('map');
+  if(!el)return;
+  var lse=[51.5144,-0.1165];
+  function fallback(){
+    el.classList.add('map-fallback');
+    el.innerHTML='<div class="map-fallback-inner">'+
+      '<div class="map-fallback-title">London School of Economics</div>'+
+      '<div class="map-fallback-addr">Houghton Street, London WC2A 2AE</div>'+
+      '<a class="map-fallback-link" href="https://www.openstreetmap.org/?mlat=51.5144&amp;mlon=-0.1165#map=17/51.5144/-0.1165" target="_blank" rel="noopener">Open in maps &rarr;</a>'+
+      '</div>';
+  }
+  if(typeof L==='undefined'){ fallback(); return; }
+  try{
+    var map=L.map('map',{scrollWheelZoom:false,zoomControl:true,attributionControl:true}).setView(lse,16);
+    var layer=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{
+      maxZoom:19, attribution:'&copy; OpenStreetMap &copy; CARTO'
+    });
+    var tileErrors=0;
+    layer.on('tileerror',function(){ tileErrors++; if(tileErrors>=3){ map.remove(); fallback(); } });
+    layer.addTo(map);
+    var mark=L.circleMarker(lse,{radius:9,color:'#7a5223',fillColor:'#9a6b2f',fillOpacity:1,weight:3}).addTo(map);
+    mark.bindPopup('<strong>London School of Economics</strong><br>Houghton Street, London WC2A 2AE');
+    map.on('click',function(){map.scrollWheelZoom.enable();});
+    map.on('mouseout',function(){map.scrollWheelZoom.disable();});
+  }catch(e){ fallback(); }
+})();
+
+// Programme: center the scroll box by default, manage dual edge fades, sync top scrollbar
+(function(){
+  var sc=document.querySelector('.prog-scroll');
+  if(!sc)return;
+  var fl=document.querySelector('.prog-fade-l');
+  var fr=document.querySelector('.prog-fade-r');
+  var tb=document.querySelector('.prog-topbar');
+  var tbi=document.querySelector('.prog-topbar-inner');
+  var syncing=false;
+  function update(){
+    var max=sc.scrollWidth - sc.clientWidth;
+    if(fl) fl.style.opacity = sc.scrollLeft <= 4 ? '0' : '1';
+    if(fr) fr.style.opacity = sc.scrollLeft >= max - 4 ? '0' : '1';
+  }
+  function syncFromMain(){
+    if(syncing){syncing=false;return;}
+    if(tb){syncing=true;tb.scrollLeft=sc.scrollLeft;}
+    update();
+  }
+  function syncFromTop(){
+    if(syncing){syncing=false;return;}
+    syncing=true;sc.scrollLeft=tb.scrollLeft;
+    update();
+  }
+  function setup(){
+    if(tbi) tbi.style.width = sc.scrollWidth + 'px';
+    var max=sc.scrollWidth - sc.clientWidth;
+    if(max>0) sc.scrollLeft = max/2;
+    if(tb) tb.scrollLeft = sc.scrollLeft;
+    update();
+  }
+  sc.addEventListener('scroll', syncFromMain, {passive:true});
+  if(tb) tb.addEventListener('scroll', syncFromTop, {passive:true});
+  window.addEventListener('resize', setup);
+  setup();
+})();
+
+// Programme: detailed / overview mode toggle
+(function(){
+  var prog=document.querySelector('.prog');
+  var toggle=document.querySelector('.prog-toggle');
+  if(!prog||!toggle)return;
+  var lblD=document.querySelector('.mode-detailed');
+  var lblO=document.querySelector('.mode-overview');
+  function setMode(overview){
+    prog.classList.toggle('overview',overview);
+    toggle.classList.toggle('on',overview);
+    toggle.setAttribute('aria-checked',overview?'true':'false');
+    if(lblD) lblD.classList.toggle('active',!overview);
+    if(lblO) lblO.classList.toggle('active',overview);
+  }
+  toggle.addEventListener('click',function(){ setMode(!prog.classList.contains('overview')); });
+  if(lblD) lblD.addEventListener('click',function(){ setMode(false); });
+  if(lblO) lblO.addEventListener('click',function(){ setMode(true); });
+})();
+</script>
+</body>
+</html>

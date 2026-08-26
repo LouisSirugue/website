@@ -1,0 +1,19 @@
+{
+  "listingMap": {
+    "research\\index.qmd": [
+      "articles",
+      "working_papers",
+      "working-papers",
+      "work-in-progress"
+    ],
+    "teaching\\index.qmd": [
+      "courses.yaml"
+    ],
+    "research\\archive_index.qmd": [
+      "articles"
+    ],
+    "events\\index.qmd": [
+      "events.yaml"
+    ]
+  }
+}

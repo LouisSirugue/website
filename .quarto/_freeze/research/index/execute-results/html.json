@@ -1,0 +1,12 @@
+{
+  "hash": "9c4502ad23fc63bfd8f026850c2b1b68",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\npage-layout: full\nlisting: \n  - id: articles\n    contents: \"articles\"\n    type: default\n    sort: \"false\"\n    date-format: \"MMM. YYYY\"\n    max-description-length: 550\n  - id: working-papers\n    contents: \"working-papers\"\n    type: default\n    sort: \"false\"\n    date-format: \"MMM. YYYY\"\n    max-description-length: 550\n  - id: work-in-progress\n    contents: \"work-in-progress\"\n    type: default\n    sort: \"false\"\n    date-format: \"MMM. YYYY\"\n    max-description-length: 550\ninclude-before-body: \n  text: |\n    <style>\n      .metadata { display:none !important; visibility:hidden !important; }\n      div.quarto-post .thumbnail { flex-basis: 40% !important; }\n    </style>\nformat:\n  html:\n    toc: false\n---\n\n```{css}\nh1{margin-top: -20px;}\n```\n\n\n\n# Journal article\n\n:::{#articles}\n:::\n\n# Working papers\n\n:::{#working-papers}\n:::\n\n\n# Work in progress\n\n:::{#work-in-progress}\n:::\n\n",
+    "supporting": [
+      "index_files\\figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

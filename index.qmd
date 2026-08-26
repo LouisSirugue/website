@@ -22,6 +22,9 @@ about:
       href: https://www.louissirugue.com/cv.pdf
 ---
 
+<style>.narrow {width: 80% !important; margin: auto; margin-top:1.5em!important; margin-bottom:1.5em!important;}</style>
+
+
 :::{#hero-heading}
 
 <center>

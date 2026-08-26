@@ -1,0 +1,17 @@
+{
+  "hash": "a45ebe831e59b027e69e30799d2a2ccf",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat: html\neditor: source\neditor_options: \n  chunk_output_type: console\nexecute:\n  echo: false\n  warning: false\n  message: false\n  results: \"hide\"\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n",
+    "supporting": [
+      "sirugue_2024_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,12 @@
+
+- caption: "Distribution of income deciles"
+  image: "sirugue_2024/out/preview.png"
+  link: "sirugue_2024/out/preview.png"
+  
+- caption: "Conditional income gap"
+  image: "sirugue_2024/out/conditional_gaps.png"
+  link: "sirugue_2024/out/conditional_gaps.png"
+  
+- caption: "Instrumental variable"
+  image: "sirugue_2024/out/ivs.png"
+  link: "sirugue_2024/out/ivs.png"

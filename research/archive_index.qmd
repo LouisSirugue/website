@@ -1,0 +1,15 @@
+---
+page-layout: full
+listing: 
+  contents: articles
+  type: default
+  sort: "false"
+  date-format: "MMM. YYYY"
+  max-description-length: 550
+include-before-body: 
+  text: |
+    <style>
+      .metadata { display:none !important; visibility:hidden !important; }
+      div.quarto-post .thumbnail { flex-basis: 40% !important; }
+    </style>
+---

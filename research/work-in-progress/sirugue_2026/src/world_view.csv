@@ -1,0 +1,79 @@
+country,estimator,paperId,pdf_title,estimate,source,overall_average,n_estimate_overall,estimate_expanded,n_estimate_expanded,estimate_selected,n_estimate_selected,estimate_restricted,n_estimate_restricted
+Australia,IGE,12539e729dfa42a869434ffdde7d9c56d3e8ad64,Intergenerational mobility across Australia and the stability of regional estimates,0.188,Table B.5,0.238205567418033,122,0.237942148760331,121,0.192586206896552,29,0.1965,2
+Australia,IRA,12539e729dfa42a869434ffdde7d9c56d3e8ad64,Intergenerational mobility across Australia and the stability of regional estimates,0.232,Table B.5,0.233033333333333,90,0.233033333333333,90,0.210793103448276,29,0.2285,2
+Austria,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.333491653,Online data,0.106213093285714,7,0.333491653,1,0.333491653,1,0.333491653,1
+Belgium,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.358204752,Online data,0.182800528,9,0.358204752,1,0.358204752,1,0.358204752,1
+Brazil,IGE,76d917dc2f8c8e67ca363d3220c6171f016922ed,Intergenerational Mobility: An Assessment for Latin American Countries,0.479,Table 3,0.566898440925926,27,0.567846153846154,26,0.444,2,0.444,2
+Brazil,IRA,2f2b6be8ec2ff0b01e6d839f4a8f70f9040e52e4,Intergenerational Mobility in the Land of Inequality,0.546,Table B2,0.495942857142857,14,0.495942857142857,14,0.556,2,0.556,2
+Bulgaria,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.638320744,Online data,0.638320744,1,0.638320744,1,0.638320744,1,0.638320744,1
+Canada,IGE,1a907213aa114a334b1420faac30113f1f84d7d1,Intergenerational Income Mobility in Canada and the United States,0.31,Table 2,0.280929370428571,7,0.294833333333333,6,0.3234,5,0.3234,5
+Canada,IRA,a050d311e42a0e108875f33e74a07072af07ce01,The Canadian Geography of Intergenerational Income Mobility,0.242,Table 5,0.208133333333333,15,0.208133333333333,15,0.242,1,0.242,1
+Chile,IGE,fef8715fa9f5408d868bc0183c79a61dd3daba0f,"Essays on economic inequality, income taxes, and intergenerational mobility",0.333,Table 1.13,0.355657128433333,60,0.3144375,48,0.311,4,0.333,1
+Chile,IRA,fef8715fa9f5408d868bc0183c79a61dd3daba0f,"Essays on economic inequality, income taxes, and intergenerational mobility",0.276,Table 1.13,0.245653846153846,52,0.253863636363636,44,0.269,4,0.276,1
+China,IGE,df5948c4454035c103ac42c93ba23967be0035f9,Does government education expenditure boost intergenerational mobility? Evidence from China,0.384,Table 4,0.420259775703911,179,0.421485333333333,150,0.30911052631579,19,0.36,2
+China,IRA,e1cd6c0903976967e43e4d81b3df1e37db5092b6,The Great Gatsby Curve in China: Cross-Sectional Inequality and Intergenerational Mobility,0.403,Table 2,0.361913461538462,104,0.334636065573771,61,0.362666666666667,15,0.403,1
+Cyprus,IGE,2ab45d477175e737d301bd361fb4c8bf2a0bd403,INTERGENERATIONAL INCOME MOBILITY IN CYPRUS,0.104,Table 3,0.2394802234,30,0.2387266755,4,0.104,1,0.104,1
+Czech Republic,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.491243869,Online data,0.491243869,1,0.491243869,1,0.491243869,1,0.491243869,1
+Denmark,IGE,5a9dc686c6a83c476ec9cf900526f18feb94b9c9,Finding the Land of Opportunity Intergenerational Mobility in Denmark,0.251,Table 3.2,0.203324412265957,188,0.210247195087912,182,0.25459375,32,0.159,2
+Denmark,IRA,5a9dc686c6a83c476ec9cf900526f18feb94b9c9,Finding the Land of Opportunity Intergenerational Mobility in Denmark,0.049,Table 3.2,0.19548,25,0.19548,25,0.163428571428571,7,0.049,1
+Ecuador,IGE,added_ref_004,Intergenerational Mobility in Ecuador: A First Approach,0.23,Text,0.442743624333333,6,0.2275,4,0.22,2,0.22,2
+Ecuador,IRA,added_ref_004,Intergenerational Mobility in Ecuador: A First Approach,0.2718,Table 4,0.2922,4,0.2922,4,0.2544,2,0.2544,2
+Estonia,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.347485125,Online data,0.347485125,1,0.347485125,1,0.347485125,1,0.347485125,1
+Finland,IGE,b4a83b96bc431b8fd47bd8bf7cb72195c2994f25,"Marital sorting, household labor supply, and intergenerational earnings mobility across countries",0.284,Table 2,0.194880220058824,17,0.194880220058824,17,0.224909090909091,11,0.284,1
+Finland,IRA,6956a142a2cf21395fe5d5682e9c69f3f9212d07,The Impact of an Early Career Shock on Intergenerational Mobility,0.191,Figure 1,0.1355,4,0.1355,4,0.1355,4,0.156,2
+France,IGE,6f12ecab151aee117ee46baad6e77c6a5cd52a22,Intergenerational Income Mobility in France: A Comparative and Geographic Analysis,0.46,Figure E2,0.502146537872642,212,0.512891950881774,203,0.509676829268293,164,0.5725,4
+France,IRA,6f12ecab151aee117ee46baad6e77c6a5cd52a22,Intergenerational Income Mobility in France: A Comparative and Geographic Analysis,0.28,Figure E3,0.270557851239669,242,0.277935960591133,203,0.280551515151515,165,0.28,4
+Germany,IGE,decbdfd1876f2c727a92e63ece4728dd6c6b3e68,"A COMPARISON OF INTERGENERATIONAL MOBILITY CURVES IN GERMANY, SWEDEN AND THE U.S.",0.314,Table 2,0.303767991772727,44,0.321855323277778,36,0.339375,16,0.314,1
+Germany,IRA,3436d98423d664e2330a7c76224709d6b9b5a8a3,The role of imputed rents in intergenerational income mobility in three countries,0.16,Table 2,0.228305555555556,36,0.228305555555556,36,0.2155,20,0.1625,2
+Ghana,IGE,67c75ebaaab3206161e1a8fcae487c2d982605ca,Intergenerational earnings mobility in Ghana,0.4,Table 4,0.390453964111111,9,0.346428571428571,7,0.346428571428571,7,0.346428571428571,7
+Greece,IGE,d7b96f1c9ebc3009900c5158f5109fdb25bed902,Intergenerational income mobility: Evidence from Greece,0.701,Table 10,0.500985062830509,59,0.558943504058824,51,0.580833333333333,6,0.7085,2
+Greece,IRA,d7b96f1c9ebc3009900c5158f5109fdb25bed902,Intergenerational income mobility: Evidence from Greece,0.1873,Table 14,0.176066666666667,9,0.1838875,8,0.1861,4,0.1873,1
+Hungary,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.474830627,Online data,0.474830627,1,0.474830627,1,0.474830627,1,0.474830627,1
+Iceland,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.282556921,Online data,0.282556921,1,0.282556921,1,0.282556921,1,0.282556921,1
+Indonesia,IGE,10523a8a3456bd9214467e54c9e06edba1ab3976,Assessing the Role of Education on Intergenerational Income Mobility: The Case of Indonesia,0.104,Table 1,0.22144710325,8,0.072625,4,0.089,2,0.089,2
+Indonesia,IRA,04bbec08cafa1ed1ec96830ac3bd10380d1c92c6,Instrumental Variable Approach to Intergenerational Mobility: Evidence from Indonesia,0.132,Table 2,0.2135,2,0.132,1,0.132,1,0.132,1
+Ireland,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.441486984,Online data,0.133069569142857,7,0.441486984,1,0.441486984,1,0.441486984,1
+Israel,IGE,fbd2d9d9268b95bc317174c7f87584ef48768e10,Quantifying the Role of Firms in Intergenerational Mobility,0.28,Figure 1,0.198,9,0.198,9,0.2236,5,0.2236,5
+Italy,IGE,fe86ef10134f110d242af23ccdeb37402eba612e,"""""""""AND YET IT MOVES"""""""": INTERGENERATIONAL MOBILITY IN ITALY",0.229,Figure 4,0.389783016653333,75,0.416569004611111,54,0.229,1,0.229,1
+Italy,IRA,fe86ef10134f110d242af23ccdeb37402eba612e,"""""""""AND YET IT MOVES"""""""": INTERGENERATIONAL MOBILITY IN ITALY",0.22,Table 3,0.207907216494845,97,0.207717391304348,92,0.203145833333333,48,0.206625,24
+Japan,IGE,7e61517bdb7cd939c421169d80dbbcf6834feba5,Birth order and intergenerational income mobility in Japan: Is the first-born child different?,0.44,Table 3,0.399940679772727,22,0.394066666666667,15,0.394066666666667,15,0.44,1
+Latvia,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.47937268,Online data,0.47937268,1,0.47937268,1,0.47937268,1,0.47937268,1
+Lithuania,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.402329326,Online data,0.402329326,1,0.402329326,1,0.402329326,1,0.402329326,1
+Luxembourg,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.465602964,Online data,0.465602964,1,0.465602964,1,0.465602964,1,0.465602964,1
+Malta,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.638713062,Online data,0.638713062,1,0.638713062,1,0.638713062,1,0.638713062,1
+Mexico,IGE,added_ref_002,Intergenerational Earnings Mobility in Mexico,0.638,Table 3,0.499932153547619,42,0.625013677181818,11,0.625013677181818,11,0.6075,2
+Mexico,IRA,added_ref_002,Intergenerational Earnings Mobility in Mexico,0.296,Table 3,0.362866666666667,15,0.2943,10,0.2943,10,0.2845,2
+Netherlands,IRA,9d5b7d13d90e22b4350d71279be8c3d0754b9683,Intergenerational Mobility of Immigrants in the Netherlands,0.26,Figure 1,0.26,1,0.26,1,0.26,1,0.26,1
+New Zealand,IGE,63045667936aceec1ef48bea7c89b58154344ab3,Temporal and regional variations in intergenerational income mobility in New Zealand,0.2388,Table 5,0.286645454545455,33,0.286645454545455,33,0.286645454545455,33,0.286645454545455,33
+Norway,IGE,decbdfd1876f2c727a92e63ece4728dd6c6b3e68,"A COMPARISON OF INTERGENERATIONAL MOBILITY CURVES IN GERMANY, SWEDEN AND THE U.S.",0.194,Table 2,0.122974757321739,115,0.122974757321739,115,0.194,1,0.194,1
+Norway,IRA,069cd40278c24e55c5c31b7eb1594d6cd8af2d91,Intergenerational Mobility Trends and the Changing Role of Female Labor,0.17,Table B3,0.198595890410959,146,0.198595890410959,146,0.2125,4,0.202,2
+Panama,IGE,76d917dc2f8c8e67ca363d3220c6171f016922ed,Intergenerational Mobility: An Assessment for Latin American Countries,0.336,Table 3,0.34792075,7,0.306333333333333,6,0.312,2,0.312,2
+Poland,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.356059462,Online data,0.356059462,1,0.356059462,1,0.356059462,1,0.356059462,1
+Portugal,IGE,7b9619a654bbea64621441e0d296fda3250fcc4c,Using Survey Data to Estimate Intergenerational Mobility in Income and Education in Portugal,0.27,Table 19,0.251709962717949,39,0.272203162357143,28,0.262222222222222,9,0.27,1
+Portugal,IRA,7b9619a654bbea64621441e0d296fda3250fcc4c,Using Survey Data to Estimate Intergenerational Mobility in Income and Education in Portugal,0.31,Table 19,0.909666666666667,30,0.596666666666667,27,0.6,9,0.31,1
+Romania,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.562933564,Online data,0.562933564,1,0.562933564,1,0.562933564,1,0.562933564,1
+Russia,IGE,51a26f92df8d68d4de3ad8507001890be10d272e,Intergenerational Earnings Mobility in Post-Soviet Russia,0.3013,Table A5,0.299423289181818,11,0.29615,10,0.29615,10,0.3013,1
+Russia,IRA,51a26f92df8d68d4de3ad8507001890be10d272e,Intergenerational Earnings Mobility in Post-Soviet Russia,0.3573,Table A7,0.354971428571429,7,0.354971428571429,7,0.35682,5,0.35682,5
+Singapore,IGE,990a506c05127fe7a143b03b0d3b34b383a5557b,Intergenerational Earnings Mobility in Singapore and the United States,0.23,Table 2,0.255,2,0.255,2,0.23,1,0.23,1
+Slovakia,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.455025584,Online data,0.455025584,1,0.455025584,1,0.455025584,1,0.455025584,1
+Slovenia,IGE,b61ecbd1aa5ee93cf918e59b153fc7545a5c45c3,Intergenerational Income Mobility around the World,0.249457464,Online data,0.249457464,1,0.249457464,1,0.249457464,1,0.249457464,1
+South Africa,IGE,0a7ca7587dec4da51b6b0bb9ba11cb21c4e149bb,Estimating intergenerational income mobility on sub-optimal data: a machine learning approach,0.452,Table 2,0.677795273326531,49,0.659188971095238,21,0.653774265888889,9,0.633,4
+South Korea,IGE,4de0e90e10e6fe8023385815ab3295f6a5b1b85c,Intergenerational income mobility and inequality in South Korea,0.215,Table A1,0.224853658536585,82,0.224853658536585,82,0.216,22,0.222833333333333,6
+South Korea,IRA,444957592c5bb2a93a51884db6d92d9279c56647,Comparison of intergenerational income mobility in South Korea and the United States: Period changes between 1980?1995 and 1996?2015,0.07,Table 7,0.115,2,0.115,2,0.07,1,0.07,1
+Spain,IGE,7033e5c5b49cf5e265b35a9dc836a9c286679327,Intergenerational earnings and income mobility in Spain,0.46,Table 4,0.382868998933333,30,0.456821362181818,22,0.459504373,16,0.463333333333333,3
+Spain,IRA,87b218cf32599f9cce283b58ac2061b61c4f8457,"Intergenerational Mobility, Gender Differences and the role of Out-Migration: new evidence from Spain",0.195,Table A3,0.2536875,16,0.2536875,16,0.260333333333333,12,0.195,1
+Sweden,IGE,2166d32b530938ff70786b755e7e9843604081f0,Intergenerational mobility in Sweden: a regional perspective,0.298,Table 2,0.188549767333333,60,0.188549767333333,60,0.181388888888889,9,0.298,1
+Sweden,IRA,2166d32b530938ff70786b755e7e9843604081f0,Intergenerational mobility in Sweden: a regional perspective,0.197,Table 2,0.18746052631579,114,0.18746052631579,114,0.157541666666667,12,0.197,1
+Switzerland,IGE,48f498233b773120e7b071053a1d17e99efbefef,Switzer-Land of Opportunity: Intergenerational Income Mobility in the Land of Vocational Education,0.163,Table 8,0.213734785108108,37,0.213734785108108,37,0.1494,20,0.1524,5
+Switzerland,IRA,6ccbc55fe44c23fbd49ef4273b1a512ffdb3c347,The Effect of Immigration on Intergenerational Income Mobility of Natives,0.134,Table 4,0.136285714285714,28,0.136285714285714,28,0.140571428571429,21,0.134,1
+Taiwan,IGE,b2b114464a11327e59560e3133f0bc2683bbfdec,INTERGENERATIONAL INCOME MOBILITY ACROSS THREE GENERATIONS: THE CASE OF TAIWAN,0.182,Table 5,0.375900966282609,46,0.366047619047619,42,0.15825,4,0.178,2
+Taiwan,IRA,d05797b92b81c4d579c732241ade31102730b1b7,Intergenerational earnings mobility in Taiwan: 1990 - 2010,0.276,Table 6,0.255,14,0.26125,8,0.26125,8,0.26125,8
+Turkey,IGE,efb80051276634b486b06aa442f9b570584f5d2d,Intergenerational income mobility in Turkey,0.77,Table 8,0.655319322585952,541,0.649659774436091,532,0.486026717557252,262,0.76,4
+Turkey,IRA,260e8ac9fee5df82fef51a5ca0d0473f76b695ea,Online Appendix for Intergenerational Income Mobility in Turkey,0.416,Table A.14,0.406142857142857,14,0.406142857142857,14,0.4005,2,0.4005,2
+United Kingdom,IGE,3db533b25b3da8505638faca7279a46b10d3bb7a,Intergenerational income mobility: New evidence from the UK,0.293,Table 13,0.266640416935484,372,0.291655751194539,293,0.279105940594059,101,0.293,1
+United Kingdom,IRA,3db533b25b3da8505638faca7279a46b10d3bb7a,Intergenerational income mobility: New evidence from the UK,0.262,Table 13,0.271567111111111,225,0.277407216494845,194,0.279163265306123,98,0.262,1
+United States,IGE,0921f81c1783cc3a40212dec2675fcfb7f4b814e,The Intergenerational Transmission of Family-Income Advantages in the United States,0.46,Table 3,0.441908055116738,1165,0.441564359068816,1148,0.377463414634146,41,0.46175,8
+United States,IRA,3436d98423d664e2330a7c76224709d6b9b5a8a3,The role of imputed rents in intergenerational income mobility in three countries,0.419,Table 2,0.323282807017544,570,0.323074295774648,568,0.371090909090909,33,0.428,2
+Uruguay,IGE,added_ref_003,Intergenerational mobility along the income distribution: estimates using administrative data for a developing country,0.208,Table B7,0.189416666666667,12,0.212777777777778,9,0.212333333333333,3,0.212333333333333,3
+Uruguay,IRA,added_ref_003,Intergenerational mobility along the income distribution: estimates using administrative data for a developing country,0.289,Table B3,0.246162804878049,164,0.252409150326797,153,0.261566129032258,62,0.266829411764706,17
+Vietnam,IGE,a41a2554885f8a20e35d1de1a76b0d89c3a9bfe3,Intergenerational Earnings and Income Mobility in Vietnam,0.46,Table 7,0.35707768792,75,0.374565217391304,46,0.45,6,0.46,1

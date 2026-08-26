@@ -1,0 +1,270 @@
+---
+format: html
+editor: source
+editor_options: 
+  chunk_output_type: console
+execute:
+  echo: false
+  warning: false
+  message: false
+  results: "hide"
+---
+
+# Data cleaning
+
+```{r, warning = F, message = F}
+# R version 4.3.2 (2023-10-31 ucrt) -- "Eye Holes"
+# RStudio 2024.04.2+764 "Chocolate Cosmos"
+
+library(tidyverse)  # Version ‘2.0.0’
+library(data.table) # Version ‘1.15.4’
+library(readxl)     # Version ‘1.4.3’
+library(kableExtra) # Version ‘1.4.0’
+library(ggthemr)    # Version ‘1.1.0’
+library(ggtext)     # Version ‘0.1.2’
+library(sf)         # Version ‘1.0.15’
+library(viridis)    # Version '0.6.5'
+library(patchwork)  # Version ‘1.2.0’
+
+ggthemr("pale")
+
+text_size <- 11
+m <- text_size / 2
+bwidth <- 6
+bheight <- bwidth*(9/16)*1.1
+
+mypal <- c("#BB394C", "#888888", "#242424")
+greys <- c("#eaeaea", "#d1d1d1", "#444444")
+grad <- c("#000000", "#921539", "#dd0747", "#ffffff")
+alt_pal <- c("#FCDBB0", "#DD908A", "#BB394C", "#702F38", "#242424")
+
+
+custom_theme <- function() {
+  theme(text = element_text(color = greys[3], size = text_size, lineheight = .9),
+        axis.ticks = element_line(color = greys[2]),
+        axis.ticks.length = unit(m/2, "pt"),
+        axis.line = element_line(color = greys[2]),
+        axis.text = element_markdown(),
+        axis.title.x = element_markdown(margin = margin(t = m)),
+        axis.title.x.top = element_markdown(margin = margin(b = m)),
+        axis.title.y = element_markdown(margin = margin(r = m)),
+        axis.title.y.right = element_markdown(margin = margin(l = m)),
+        plot.margin = margin(m, m, m, m),
+        plot.background = element_blank(),
+        panel.background = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = greys[1], linetype = "dashed", linewidth = rel(.5)),
+        legend.background = element_blank(),
+        legend.box.background = element_blank(),
+        legend.key = element_blank(),
+        legend.margin = margin(0, 0, 0, 0, "cm"),
+        legend.position = "top", 
+        legend.direction = "horizontal", 
+        legend.title = element_blank(),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text = element_text(color = greys[3], size = rel(0.8), margin = margin(m, m, m, m)))
+}
+
+
+# Append Income and Education Excel sheets
+latam <- rbind(read_xlsx("../work-in-progress/ferreira_et_al_2025/src/IGM Metadata V2.xlsx", 
+                         skip = 1, sheet = "LAC_income") %>% 
+                 rename(`Estimation method` = `Estimation method (e.g. 2S)`) %>% 
+                 select(-`Actual estimate available?`) %>% 
+                 mutate(outcome = "Income"),
+               read_xlsx("../work-in-progress/ferreira_et_al_2025/src/IGM Metadata V2.xlsx",
+                         skip = 1, sheet = "LAC_education") %>% 
+                 mutate(outcome = "Education")) 
+
+setDT(latam) # Change class
+
+# Rename variables for practicality
+setnames(latam, old = names(latam),
+         new = c("APA_ref", "short_ref", "country", "year", "cohort", "indicator", 
+                 "method", "data_type1", "data_type2", "data_source1", "data_source2", 
+                 "estimate", "se_ci", "var_description", "age_children", "ages_parents", 
+                 "obs", "coresident", "outcome"))
+
+# Print Neidhöfer et al. (2018) cohorts
+latam[short_ref == "Neidhöfer et al. (2018)", .N, by = c("short_ref", "cohort")]
+
+# Remove younger cohorts from Neidhöfer et al. (2018), which were kept in the database 
+# but not in the paper because smaller sample and education may not be complete.
+latam <- latam[!(short_ref == "Neidhöfer et al. (2018)" & 
+                   cohort %chin% c("1988-1991", "1992-1995")), ]
+
+# Keep rows with an estimate in it and convert to numeric
+latam <- latam[!is.na(estimate)][, estimate := as.numeric(estimate)]
+
+# Check missing values
+latam %>% summarise(across(everything(), function(x) {100*sum(is.na(x))})) %>% 
+  kable(caption = "Number of missing values for each variable") %>% 
+  kable_styling("striped", full_width = F) 
+
+# Merge country labels
+latam <- latam %>% 
+  merge.data.table(fread("../work-in-progress/ferreira_et_al_2025/src/country_iso_continents.csv") %>% 
+                     .[, .(country = iso3, continent, label = country)],
+                   all.x = T, all.y = F, by = "country")
+
+# Generate estimate id
+latam[, id := 1:.N]
+
+# Keep only indicators of relative mobility (excluding IGRC (log) from
+# Neidhöfer et al (2018))
+baseline_dt <- latam[indicator %chin% c("Rank-rank", "IGE", "IGCC", 
+                                        "IGRC", "Beta coefficient")]
+
+# Relabel education indicators
+baseline_dt[indicator == "IGRC", indicator := "Regression coefficient"]
+baseline_dt[indicator == "IGCC", indicator := "Correlation coefficient"]
+baseline_dt[, ":=" (cohort_min = as.numeric(gsub("-.*$", "", cohort)),
+                    cohort_max = as.numeric(gsub("^.*-", "", cohort)))]
+baseline_dt[cohort_max < 100, cohort_max := cohort_max + 1900]
+baseline_dt[, cohort_avg := (cohort_min+cohort_max)/2]
+```
+
+# Graphs
+
+## Coutry time trends
+
+```{r, echo = F, warning = F, fig.align='center', fig.width=bwidth, fig.height=bheight}
+trends_dt <- baseline_dt %>% 
+         .[short_ref %chin% c("Hertz et al. (2008)", "Neidhöfer et al. (2018)", 
+                              "Van der Weide et al. (2024)")] %>% 
+         filter(label != "Haiti") %>% 
+         mutate(label = ifelse(label == "Dominican Republic", "Dom. Rep.", label)) %>% 
+  mutate(data_source1 = ifelse(data_source1 == "Latinobarometro", data_source1, "Country-specific"),
+         short_ref = case_when(short_ref == "Hertz et al. (2008)" ~ "Hertz et al.\n(2008)\n", 
+                               short_ref == "Neidhöfer et al. (2018)" ~ "Neidhöfer et al.\n(2018)\n", 
+                               short_ref == "Van der Weide et al. (2024)" ~ "Van der Weide\net al. (2024)"))
+
+ggplot(trends_dt, aes(x = cohort_avg, y = estimate)) +
+  geom_point(aes(color = data_source1, shape = short_ref), alpha = .7) +
+  facet_wrap(~label, ncol = 6) +
+  scale_color_viridis_d(begin = .2, end = .75, option = 2) +
+  scale_x_continuous("Birth cohort", breaks = seq(1940, 1980, 10), labels = c(40, seq(50, 80, 10))) +
+  scale_y_continuous("Regression coefficient", limits = c(0.2, 1.05), breaks = seq(.2, 1, .2)) +
+  scale_shape_manual(values = c(16, 17, 4)) +
+  guides(color = guide_legend(title = "\nData source:", order = 2, 
+                              override.aes = list(shape = 15, size = 3, alpha = .7)), 
+         shape = guide_legend(title = "Reference study:", order = 1, 
+                              override.aes = list(color = "black", alpha = .7))) +
+  custom_theme() + 
+  theme(legend.position = "right",
+        #legend.box = "vertical",
+        legend.direction = "vertical",
+    axis.text.x = element_text(size = 9),
+        legend.title = element_text(size = 10, hjust = .5),
+        panel.grid.major.y = element_blank())
+        
+ggsave("../work-in-progress/ferreira_et_al_2025/out/time_trend.png", width = bwidth, height = bheight)
+```
+
+## Overall trend
+
+```{r}
+jde_dt <- read_xls("../work-in-progress/ferreira_et_al_2025/src//mobilitylatam_1.xls") %>% 
+  filter(survey == "Latinobarometro") %>% 
+  mutate(label = ifelse(country == "Dominican Rep.", "Dominican Republic", country)) %>% 
+  select(label, cohort, b, corr_spearman) %>% 
+  left_join(baseline_dt %>% select(country, label) %>% distinct(), by = "label") %>% 
+  pivot_longer(c(b, corr_spearman), names_to = "indicator", values_to = "estimate") %>% 
+  mutate(order_indicator = as.numeric(!indicator == "b"),
+         indicator = ifelse(indicator == "b", "Regression coefficient", "Correlation coefficient")) %>% 
+  filter(cohort < 1988)
+
+trend_values <- lapply(unique(jde_dt$label), function (i) {
+  lapply(unique(jde_dt$indicator), function (j) {
+    
+    country_dt <- jde_dt %>% 
+      filter(label == i & indicator == j)
+    
+    country_md <- lm(estimate ~ poly(cohort, 3, raw = T), country_dt)
+    
+    country_dt <- country_dt %>% 
+      select(-estimate) %>% 
+      filter(cohort %in% c(min(cohort), max(cohort))) %>% 
+      distinct()
+    
+    country_dt %>% 
+      mutate(pred = predict(country_md, country_dt)) %>% 
+      arrange(cohort) %>% 
+      mutate(period = c("pre", "post")) %>% 
+      select(country, indicator, label, pred, period) %>% 
+      pivot_wider(names_from = "period", values_from = "pred") %>% 
+      mutate(change = 100*((post-pre)/pre)) %>% 
+      pivot_longer(c(pre, post), names_to = "period", values_to = "pred")
+    
+  }) %>% rbindlist()
+}) %>% rbindlist()
+
+discrete_labels <- trend_values %>% 
+  mutate(change = ifelse(change > 0, "Increase", "Decrease")) %>% 
+  mutate(cohort = ifelse(period == "pre", 1938, 1989),
+         order_indicator = as.numeric(indicator == "Correlation coefficient"),
+         minpred = min(pred),
+         maxpred = max(pred)) %>% 
+  group_by(period, indicator) %>% 
+  arrange(pred) %>% 
+  mutate(estimate  = ((row_number()-1))/(((n()-1)/(maxpred-minpred))*.65)+(minpred*.65)-.05 )%>% 
+  ungroup()
+
+ggplot(jde_dt %>% 
+         left_join(trend_values %>% select(label, change, indicator) %>% distinct()) %>% 
+         mutate(change = ifelse(change > 0, "Increase", "Decrease")), 
+       aes(x = cohort, y = estimate, color = change)) +
+  geom_line(aes(group = country), stat = "smooth", method = "lm", formula = y ~ poly(x, 3), alpha = .4, size = .7) +
+  geom_line(stat = "smooth", method = "lm", formula = y ~ poly(x, 3), color = "black", size = 1)  +
+  facet_wrap(~reorder(indicator, order_indicator), nrow = 1) +
+  geom_text(data = discrete_labels %>% filter(cohort == 1989), 
+            aes(label = country), show.legend = F, size = 2.8) +
+  geom_text(data = discrete_labels %>% filter(cohort == 1938), 
+            aes(x = cohort, y = estimate, label = country), 
+            inherit.aes = F, show.legend = F, size = 2.8) +
+  scale_x_continuous("Birth cohort", breaks = seq(1940, 1980, 10)) +
+  scale_color_viridis_d(name = "Change over the period:", begin = .2, end = .75, option = 2) +
+  scale_y_continuous("Estimate", breaks = 1:9/10) +
+  custom_theme() +
+  theme(legend.position = "top",
+        legend.direction = "horizontal",
+        legend.title = element_text(size = 10),
+        panel.grid.major.y = element_blank())
+
+ggsave("../work-in-progress/ferreira_et_al_2025/out/reg_vs_cor_discrete.png", width = bwidth, height = bheight)
+```
+
+## Inverted U-shape
+
+```{r}
+ushape_dt <- read_xls("../work-in-progress/ferreira_et_al_2025/src/mobilitylatam_2.xls") %>% 
+  filter(survey == "Latinobarometro") %>% 
+  mutate(cohort = (as.numeric(substr(cohort, 2, 5)) + as.numeric(substr(cohort, 7, 10)))/2) %>% 
+  filter(cohort < 1988) %>%
+  select(country, cohort, N, var, var_parents) %>% 
+  pivot_longer(c(var, var_parents), names_to = "generation", values_to = "variance") %>%
+  mutate(generation = ifelse(generation == "var", "Children", "Parents"),
+         sd = sqrt(variance)) %>% 
+  group_by(cohort, generation) %>% 
+  summarise(sd = mean(sd)) %>% 
+  ungroup()
+  
+rbind(ushape_dt %>% 
+        mutate(facet = 1, 
+               facet_label = "Standard deviation among children and parents within child cohort"),
+      ushape_dt %>% 
+        mutate(cohort = ifelse(generation == "Parents", cohort-30, cohort),
+               facet = 2, 
+               facet_label = "Assigning to parents the cohort of their child -30 years")) %>% 
+  ggplot(aes(x = cohort, y = sd, color = generation, shape = generation)) +
+  geom_point(alpha = .6) +
+  geom_line(stat = "smooth", method = "lm", formula = y~poly(x, 3))+
+  scale_y_continuous("Average Standard Deviation of Years of Schooling") +
+  scale_x_continuous("Birth cohort", breaks = seq(1910, 1990, 10)) +
+  scale_color_viridis_d(name = "Generation:", begin = .2, end = .75, option = 2) +
+  scale_shape_discrete(name = "Generation:") +
+  facet_wrap(~reorder(facet_label, facet), ncol = 1) +
+  custom_theme() 
+ggsave("../work-in-progress/ferreira_et_al_2025/out/preview.png", width = bwidth, height = bheight)
+```

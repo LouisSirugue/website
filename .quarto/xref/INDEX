@@ -1,0 +1,128 @@
+{
+  "index.qmd": {
+    "index.html": "dfadb8a9"
+  },
+  "about.qmd": {
+    "about.html": "1bd6dd71"
+  },
+  "research/index.qmd": {
+    "index.html": "2ac496a8"
+  },
+  "teaching/index.qmd": {
+    "index.html": "ae7d1dc9"
+  },
+  "research/articles/igm.qmd": {
+    "igm.html": "d51c4710"
+  },
+  "research/articles/natimpact.qmd": {
+    "natimpact.html": "7ac02ad2"
+  },
+  "research/articles/segreg.qmd": {
+    "segreg.html": "1b7414c9"
+  },
+  "research/articles/govind_sirugue_2023.qmd": {
+    "govind_sirugue_2023.html": "ad2d3679"
+  },
+  "research/articles/kenedi_sirugue_2023.qmd": {
+    "kenedi_sirugue_2023.html": "687722ee"
+  },
+  "research/articles/sirugue_2024.qmd": {
+    "sirugue_2024.html": "df9618c6"
+  },
+  "research/articles/3_sirugue_2024.qmd": {
+    "3_sirugue_2024.html": "52a3c15a"
+  },
+  "research/articles/1_kenedi_sirugue_2023.qmd": {
+    "1_kenedi_sirugue_2023.html": "9b3c9088"
+  },
+  "research/articles/2_govind_sirugue_2023.qmd": {
+    "2_govind_sirugue_2023.html": "1d853723"
+  },
+  "research/articles/govind_sirugue_2023/gen_graphs.Rmd": {
+    "gen_graphs.html": "2a6d3ad3"
+  },
+  "research/articles/kenedi_sirugue_2023/figures_website.rmd": {
+    "figures_website.html": "7ea4b13c"
+  },
+  "research/articles/sirugue_2024/gen_graphs.qmd": {
+    "gen_graphs.html": "58715221"
+  },
+  "research/articles/govind_sirugue_2023/gen_graphs.qmd": {
+    "gen_graphs.html": "ce4acaaa"
+  },
+  "research/articles/kenedi_sirugue_2023/gen_graphs.qmd": {
+    "gen_graphs.html": "17d736e6"
+  },
+  "research/gen_graphs/govind_sirugue_2023.qmd": {
+    "govind_sirugue_2023.html": "3003d4b8"
+  },
+  "research/gen_graphs/kenedi_sirugue_2023.qmd": {
+    "kenedi_sirugue_2023.html": "f8d6c522"
+  },
+  "research/gen_graphs/sirugue_2024.qmd": {
+    "sirugue_2024.html": "485e2041"
+  },
+  "research/articles/0_boustan_et_al_2025.qmd": {
+    "0_boustan_et_al_2025.html": "a7f060a9"
+  },
+  "research/gen_graphs/boustan_et_al_2025.qmd": {
+    "boustan_et_al_2025.html": "8dcdce93"
+  },
+  "research/archive_index.qmd": {
+    "archive_index.html": "358bf895"
+  },
+  "research/work-in-progress/3_sirugue_2024.qmd": {
+    "3_sirugue_2024.html": "e850b09e"
+  },
+  "research/working-papers/0_boustan_et_al_2025.qmd": {
+    "0_boustan_et_al_2025.html": "78797e7e"
+  },
+  "research/working-papers/2_govind_sirugue_2023.qmd": {
+    "2_govind_sirugue_2023.html": "68dcd497"
+  },
+  "research/work-in-progress/4_brunori_et_al_2025.qmd": {
+    "4_brunori_et_al_2025.html": "66ca2fd9"
+  },
+  "research/gen_graphs/brunori_et_al_2025.qmd": {
+    "brunori_et_al_2025.html": "ecf7002d"
+  },
+  "research/working-papers/4_ferreira_et_al_2025.qmd": {
+    "4_ferreira_et_al_2025.html": "b502886f"
+  },
+  "research/gen_graphs/ferreira_et_al_2025.qmd": {
+    "ferreira_et_al_2025.html": "d8bf163a"
+  },
+  "research/work-in-progress/4_ferreira_et_al_2025.qmd": {
+    "4_ferreira_et_al_2025.html": "e99e1c92"
+  },
+  "research/working-papers/1_ferreira_et_al_2025.qmd": {
+    "1_ferreira_et_al_2025.html": "0d44c0f5"
+  },
+  "research/working-papers/2_boustan_et_al_2025.qmd": {
+    "2_boustan_et_al_2025.html": "475abee3"
+  },
+  "research/working-papers/3_govind_sirugue_2023.qmd": {
+    "3_govind_sirugue_2023.html": "521074be"
+  },
+  "research/working-papers/1_boustan_et_al_2025.qmd": {
+    "1_boustan_et_al_2025.html": "3168a834"
+  },
+  "research/working-papers/2_ferreira_et_al_2025.qmd": {
+    "2_ferreira_et_al_2025.html": "e0d7f7ed"
+  },
+  "research/working-papers/4_ferreira_et_al_2026.qmd": {
+    "4_ferreira_et_al_2026.html": "132563cd"
+  },
+  "events/index.qmd": {
+    "index.html": "3939282e"
+  },
+  "research/work-in-progress/1_sirugue_2026.qmd": {
+    "1_sirugue_2026.html": "6f43b263"
+  },
+  "research/work-in-progress/2_sirugue_2024.qmd": {
+    "2_sirugue_2024.html": "1fa422c7"
+  },
+  "research/working-papers/3_ferreira_et_al_2025.qmd": {
+    "3_ferreira_et_al_2025.html": "cce98f32"
+  }
+}

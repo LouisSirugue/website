@@ -1,0 +1,141 @@
+n,decile,origin,pct,mixity,order_origin,order_mixity
+139,5,Other,0.0747713824636902,"2 parents
+born abroad",4,0
+143,4,Other,0.0769230769230769,"2 parents
+born abroad",4,0
+165,6,Other,0.0780880265026029,"1 parent
+born abroad",4,1
+165,5,Other,0.0780880265026029,"1 parent
+born abroad",4,1
+166,7,Other,0.0892953200645508,"2 parents
+born abroad",4,0
+168,6,Other,0.0903711672942442,"2 parents
+born abroad",4,0
+169,7,Other,0.0799810695693327,"1 parent
+born abroad",4,1
+174,9,Other,0.0935987089833244,"2 parents
+born abroad",4,0
+176,8,Other,0.0946745562130178,"2 parents
+born abroad",4,0
+180,10,South Europe,0.0826446280991736,"1 parent
+born abroad",3,1
+183,1,South Europe,0.0828429153463106,"2 parents
+born abroad",3,0
+187,4,Other,0.0884997633696167,"1 parent
+born abroad",4,1
+194,2,Other,0.0918125887363938,"1 parent
+born abroad",4,1
+195,3,Other,0.0922858495030762,"1 parent
+born abroad",4,1
+198,3,Other,0.106508875739645,"2 parents
+born abroad",4,0
+200,10,South Europe,0.0905387052965142,"2 parents
+born abroad",3,0
+201,5,South Europe,0.0922865013774105,"1 parent
+born abroad",3,1
+203,2,Other,0.109198493813878,"2 parents
+born abroad",4,0
+207,10,Other,0.111350188273265,"2 parents
+born abroad",4,0
+210,7,South Europe,0.09506564056134,"2 parents
+born abroad",3,0
+210,4,South Europe,0.09506564056134,"2 parents
+born abroad",3,0
+210,4,South Europe,0.0964187327823691,"1 parent
+born abroad",3,1
+213,3,South Europe,0.0964237211407877,"2 parents
+born abroad",3,0
+213,8,South Europe,0.0977961432506887,"1 parent
+born abroad",3,1
+217,5,South Europe,0.098234495246718,"2 parents
+born abroad",3,0
+219,1,South Europe,0.100550964187328,"1 parent
+born abroad",3,1
+224,1,Other,0.106010411736867,"1 parent
+born abroad",4,1
+226,9,South Europe,0.10376492194674,"1 parent
+born abroad",3,1
+228,2,South Europe,0.103214124038026,"2 parents
+born abroad",3,0
+228,7,South Europe,0.104683195592286,"1 parent
+born abroad",3,1
+230,8,Other,0.108849976336962,"1 parent
+born abroad",4,1
+231,6,South Europe,0.106060606060606,"1 parent
+born abroad",3,1
+233,3,South Europe,0.106978879706152,"1 parent
+born abroad",3,1
+234,6,South Europe,0.105930285196922,"2 parents
+born abroad",3,0
+237,2,South Europe,0.108815426997245,"1 parent
+born abroad",3,1
+241,9,Other,0.114055844770469,"1 parent
+born abroad",4,1
+254,9,South Europe,0.114984155726573,"2 parents
+born abroad",3,0
+260,8,South Europe,0.117700316885469,"2 parents
+born abroad",3,0
+285,1,Other,0.153308230231307,"2 parents
+born abroad",4,0
+335,6,North Africa,0.0695164971985889,"2 parents
+born abroad",2,0
+343,10,Other,0.162328442972078,"1 parent
+born abroad",4,1
+348,5,North Africa,0.072214152313758,"2 parents
+born abroad",2,0
+351,5,North Africa,0.0836510962821735,"1 parent
+born abroad",2,1
+355,10,North Africa,0.0736667358373107,"2 parents
+born abroad",2,0
+357,8,North Africa,0.0740817597011828,"2 parents
+born abroad",2,0
+380,9,North Africa,0.0788545341357128,"2 parents
+born abroad",2,0
+385,4,North Africa,0.0917540514775977,"1 parent
+born abroad",2,1
+395,7,North Africa,0.0819672131147541,"2 parents
+born abroad",2,0
+405,7,North Africa,0.0965204957102002,"1 parent
+born abroad",2,1
+411,6,North Africa,0.0979504289799809,"1 parent
+born abroad",2,1
+413,8,North Africa,0.0984270734032412,"1 parent
+born abroad",2,1
+418,2,North Africa,0.0996186844613918,"1 parent
+born abroad",2,1
+420,4,North Africa,0.0871550114131563,"2 parents
+born abroad",2,0
+420,3,North Africa,0.100095328884652,"1 parent
+born abroad",2,1
+440,1,North Africa,0.104861773117255,"1 parent
+born abroad",2,1
+456,9,North Africa,0.108674928503337,"1 parent
+born abroad",2,1
+497,10,North Africa,0.118446139180172,"1 parent
+born abroad",2,1
+545,3,North Africa,0.113094002905167,"2 parents
+born abroad",2,0
+690,2,North Africa,0.1431832330359,"2 parents
+born abroad",2,0
+994,1,North Africa,0.20626686034447,"2 parents
+born abroad",2,0
+6262,1,France,0.0916475185504998,"2 parents
+born abroad",1,0
+6558,2,France,0.0959796273800986,"2 parents
+born abroad",1,0
+6767,3,France,0.0990384474658627,"2 parents
+born abroad",1,0
+6793,10,France,0.0994189705387329,"2 parents
+born abroad",1,0
+6837,9,France,0.100062932662052,"2 parents
+born abroad",1,0
+6924,8,France,0.101336221405886,"2 parents
+born abroad",1,0
+6995,7,France,0.102375342104878,"2 parents
+born abroad",1,0
+7015,4,France,0.102668052160932,"2 parents
+born abroad",1,0
+7024,6,France,0.102799771686156,"2 parents
+born abroad",1,0
+7152,5,France,0.104673116044902,"2 parents
+born abroad",1,0

@@ -1,0 +1,50 @@
+---
+page-layout: full
+listing: 
+  - id: articles
+    contents: "articles"
+    type: default
+    sort: "false"
+    date-format: "MMM. YYYY"
+    max-description-length: 145
+  - id: working-papers
+    contents: "working-papers"
+    type: default
+    sort: "false"
+    date-format: "MMM. YYYY"
+    max-description-length: 145
+  - id: work-in-progress
+    contents: "work-in-progress"
+    type: default
+    sort: "false"
+    date-format: "MMM. YYYY"
+    max-description-length: 145
+include-before-body: 
+  text: |
+    <style>
+      .metadata { display:none !important; visibility:hidden !important; }
+      div.quarto-post .thumbnail { flex-basis: 18% !important; }
+      h1{margin-top: -20px;color:#A4A9AE;} 
+    </style>
+format:
+  html:
+    toc: false
+---
+
+<br>
+
+# Publication
+
+:::{#articles}
+:::
+
+# Working papers
+
+:::{#working-papers}
+:::
+
+
+# Work in progress
+
+:::{#work-in-progress}
+:::

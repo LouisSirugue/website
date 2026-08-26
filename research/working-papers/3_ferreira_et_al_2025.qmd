@@ -1,0 +1,89 @@
+---
+title: '<span style = "font-size: 18pt!important;">Inherited Inequality in Latin America</span>'
+subtitle: '<a href = "https://stonecenter.gc.cuny.edu/publications/inherited-inequality-in-latin-america/" target="_blank"><span style = "color:#18BC9C!important;">Stone Center Working Paper (2025)</span></a>, <i>with <a href = "https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank"><span style = "color:#18BC9C!important;">Francisco H. G. Ferreira</span></a>, <a href = "https://www.unicaldine.it/" target="_blank"><span style = "color:#18BC9C!important;">Paolo Brunori</span></a>, <a href = "https://gneid.weebly.com/" target="_blank"><span style = "color:#18BC9C!important;">Guido Neidhöfer</span></a>, and <a href = "https://www.pedrosalasrojo.com/" target="_blank"><span style = "color:#18BC9C!important;">Pedro Salas-Rojo</span></a></i>'
+abstract: '<span style = "color:#6C757D;">This chapter argues that relative measures of intergenerational mobility and inequality of opportunity are closely related ways of quantifying the inheritability of inequality. We review both literatures for Latin America, looking both at income and educational persistence. We document very high levels of intergenerational persistence and inequality of opportunity for education, with inherited characteristics predicting 29% to 52% of the current-generation variance in years of schooling. Inherited circumstances are somewhat less predictive of educational achievement, measured through standardized test scores, accounting for 20% to 30% of their variance. Our estimates of inequality of opportunity for income acquisition suggest that between 46% to 66% of contemporary income Gini coefficients can be predicted by a relatively narrow set of inherited circumstances, making Latin America a region of high inequality inheritability by international standards. Our review also finds a very wide range of intergenerational income elasticity estimates, with substantial uncertainty driven by data challenges and methodological differences.</span>'
+image: "ferreira_et_al_2025/out/preview.png"
+about: 
+  template: solana
+  image-width: 0px
+  links:
+    - icon: file-earmark-text
+      text: Working paper
+      href: https://stonecenter.gc.cuny.edu/publications/inherited-inequality-in-latin-america/
+    - icon: collection
+      text: Slides
+      href: https://www.pedrosalasrojo.com/pdfiles/paperspres/latam.pdf
+include-before-body: 
+  text: |
+    <style>
+      .quarto-title-meta { display:none !important; visibility:hidden !important; }
+    </style>
+---
+
+<br>
+
+```{r, echo = F}
+source("carousel.R")
+carousel("gallery-carousel1", 5000, yaml.load_file("ferreira_et_al_2025/carousel.yml"))
+```
+
+```{=html}
+<style>
+
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(237,243,249);
+}
+
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+font-size: 1.25em;
+font-weight: 300;
+padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 70%;
+  margin-bottom: 110px;
+  border-style:none!important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.touch {
+  
+}
+</style>
+```
