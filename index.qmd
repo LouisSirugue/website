@@ -1,6 +1,6 @@
 ---
 title: "Louis Sirugue"
-image: me.png
+image: me.jpg
 toc: false
 about: 
   id: hero-heading
