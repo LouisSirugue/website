@@ -22,9 +22,6 @@ about:
       href: https://www.louissirugue.com/cv.pdf
 ---
 
-<style>.narrow {width: 80% !important; margin: auto; margin-top:1.5em!important; margin-bottom:1.5em!important;}</style>
-
-
 :::{#hero-heading}
 
 <center>
@@ -32,12 +29,12 @@ Research Fellow -- London School of Economics<br>
 <i>International Inequalities Institute</i>
 </center>
 
-<blockquote style = "margin-top:1.5em">My current research focuses on global variations in **intergenerational income mobility** and on the effect of higher education **public policies** on social mobility.</blockquote>
+<blockquote style = "margin-bottom:0em;margin-top:.5em">My research focuses on empirical labor and public economics, migration and social policies, and economic and spatial inequalities.</blockquote>
 
 :::
 
 <center>
-<p style="font-size:10pt;margin-top:1em;">London School of Economics<br>
+<p style="font-size:10pt;">London School of Economics<br>
 Houghton Street<br>
 Center Building – 4.08<br>
 London WC2A 2AE
