@@ -6,8 +6,9 @@
   path: "../eosm/index.html"
 - title: "<b>Smoothie seminar series</b>"
   image: "images/smoothie.png"
-  description: "Lunch seminar - Back on October 1<sup>st</sup> 2026"
+  description: "Academic lunch seminar"
   author: "International Inequalities Institute"
   date: "2026-05-07"
+  path: "smoothie_poster_autumn26.pdf"
 
   
