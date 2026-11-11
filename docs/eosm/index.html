@@ -219,6 +219,19 @@ nav{display:flex;align-items:center;justify-content:space-between;height:68px;ma
   border-left:3px solid currentColor;cursor:default;overflow:hidden}
 .slot.break{justify-content:center;align-items:center;text-align:center}
 .slot.break.ov-inline{align-items:baseline;text-align:left}
+.slot.welcome-slot{overflow:visible}
+.slot.welcome-slot .tip{
+  position:absolute;left:0;top:100%;margin-top:3px;z-index:60;
+  width:max-content;max-width:300px;background:var(--ink);color:var(--paper);
+  font-size:.82rem;line-height:1.4;padding:8px 12px;border:1px solid var(--brass);border-radius:6px;
+  box-shadow:0 8px 24px rgba(21,33,43,.22);
+  opacity:0;visibility:hidden;transform:translateY(-4px);
+  transition:opacity .15s,transform .15s,visibility .15s;
+}
+.slot.welcome-slot:hover{z-index:61}
+.slot.welcome-slot:hover .tip{opacity:1;visibility:visible;transform:translateY(0)}
+.slot.welcome-slot .tip a{color:#e7c9a0;text-decoration:none;border-bottom:1px solid rgba(231,201,160,.35)}
+.slot.welcome-slot .tip a:hover{color:#fff;border-color:#fff}
 .slot.papers{overflow:visible}
 .slot.papers:hover,.slot.expand:hover{z-index:55}
 .prog .slot.expand{height:auto;min-height:calc(var(--d) * var(--ppm));overflow:visible}
@@ -510,11 +523,12 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.82rem;color:va
           <div class="slot ov-inline welcome-slot" style="--t:260.0;--d:10.0;color:#8a5a3a">
             <div class="s-meta"><span class="s-time">13:20 &ndash; 13:30</span><span class="s-type t-welcome">Welcome</span></div>
             <div class="s-title">Welcome</div>
+            <div class="tip"><a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener">Prof Francisco H. G. Ferreira</a>, LSE</div>
           </div>
           <div class="slot" style="--t:270.0;--d:60.0;color:#5a6b3a">
             <div class="s-meta"><span class="s-time">13:30 &ndash; 14:30</span><span class="s-type t-keynote">Keynote</span></div>
             <div class="s-title">Keynote lecture</div>
-            <div class="tip">Title: Equality of opportunity and intergenerational income mobility<br>Speaker: <a href="https://sites.google.com/view/mjantti/home" target="_blank" rel="noopener">Prof Markus Jäntti</a>, Stockholm University.<br>Chair: <a href="https://www.lse.ac.uk/people/francisco-h.-g.-ferreira" target="_blank" rel="noopener">Prof Francisco H. G. Ferreira</a>, LSE.</div>
+            <div class="tip">Title: Equality of opportunity and intergenerational income mobility<br>Speaker: <a href="https://sites.google.com/view/mjantti/home" target="_blank" rel="noopener">Prof Markus Jäntti</a>, Stockholm University.<br>Chair: <a href="https://www.lse.ac.uk/people/stephen-jenkins" target="_blank" rel="noopener">Prof Stephen Jenkins</a>, LSE.</div>
           </div>
           <div class="slot" style="--t:330.0;--d:90.0;color:#7a5223">
             <div class="s-meta"><span class="s-time">14:30 &ndash; 16:00</span><span class="s-type t-policy">Policy panel</span></div>
