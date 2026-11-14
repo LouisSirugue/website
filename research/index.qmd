@@ -13,12 +13,6 @@ listing:
     sort: "false"
     date-format: "MMM. YYYY"
     max-description-length: 340
-  - id: work-in-progress
-    contents: "work-in-progress"
-    type: default
-    sort: "false"
-    date-format: "MMM. YYYY"
-    max-description-length: 340
 include-before-body: 
   text: |
     <style>
@@ -41,10 +35,4 @@ format:
 # Working papers
 
 :::{#working-papers}
-:::
-
-
-# Work in progress
-
-:::{#work-in-progress}
 :::

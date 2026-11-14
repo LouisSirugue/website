@@ -20,6 +20,19 @@ listing:
 ## Past events
 
 ::: {.callout-note collapse="true" icon=false}
+## Equality of Opportunity and Social Mobility, Policy Workshop
+
+This event brought together **academics, policymakers, and practitioners** to explore cross-sectoral responses to the challenges posed by **inherited inequalities**.
+
+- Keynote lecture by [Prof Markus Jäntti](https://sites.google.com/view/mjantti/home)
+- Policy, academic, and practitioners panels
+- Academic presentations and poster sessions
+- Release of [GEOM 2.0](https://geom.ecineq.org/)
+
+The detailed program is available [here](eosm_leaflet.pdf).
+:::
+
+::: {.callout-note collapse="true" icon=false}
 ## Inequalities & Opportunities Summer School
 
 Hosted by the [University of Bari](https://www.uniba.it/en/courses/economics-finance-and-business), and co-organized with the [Luxembourg Institute of Socio-Economic Research](https://www.liser.lu/), [Sapienza University of Rome](https://www.dsge.uniroma1.it/en), the [London School of Economics](https://www.lse.ac.uk/international-inequalities), and [Queen Mary University of London](https://www.qmul.ac.uk/sef/), this summer school featured 10 lectures across 3 thematic sessions:

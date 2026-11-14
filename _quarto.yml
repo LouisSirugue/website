@@ -15,9 +15,10 @@ website:
         href: teaching/index.qmd
       - text: "Event organization"
         href: events/index.qmd
+      - text: "<b>GEOM</b>"
+        href: https://geom.ecineq.org/
 
 format:
   html:
-    theme: flatly
-    css: styles.css
+    theme: [cosmo, theme.scss]
     toc: true

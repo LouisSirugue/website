@@ -1,0 +1,91 @@
+---
+title: '<span style = "font-size: 18pt!important;">International Variation in Intergenerational Income Mobility: A Meta-Analysis</span>'
+subtitle: '<a href = "https://geom.ecineq.org/papers/sirugue_2026_meta_analysis.pdf" target="_blank"><span style = "color:#18BC9C!important;">Working Paper</span></a>'
+abstract: '<span style = "color:#6C757D;">I conduct a systematic quantitative review of the literature to document cross-country variation in intergenerational income mobility estimates, focusing on intergenerational elasticities (IGE) and rank associations (IRA). These measures are known to be sensitive to methodological choices, and data constraints often prevent researchers from adopting best practices, limiting comparability across studies. I compile 7,830 national-level estimates of intergenerational income mobility drawn from 173 studies, along with detailed information on their estimation settings. I use a meta-regression to document how these estimation parameters correlate with the magnitude of persistence estimates (i.e., individual or household income, survey or administrative data, age at income observation, and predicted versus observed parental income). IGEs prove more sensitive than IRAs to these parameters. To document cross-country variation in intergenerational income mobility in the most comparable way, I harmonize estimates with a selection approach and an adjustment approach. Harmonized estimates are consistent with the Great Gatsby Curve, particularly for the IRA, whose correlation with the Gini index reaches 0.65 across 28 countries.</span>'
+image: "sirugue_2026/out/preview.png"
+about: 
+  template: solana
+  image-width: 0px
+  links:
+    - icon: file-earmark-text
+      text: Working paper
+      href: https://geom.ecineq.org/papers/sirugue_2026_meta_analysis.pdf
+    - icon: globe-americas
+      text: Website
+      href: https://geom.ecineq.org
+include-before-body: 
+  text: |
+    <style>
+      .quarto-title-meta { display:none !important; visibility:hidden !important; }
+    </style>
+---
+
+
+
+```{r, message = F, warning = F, echo = F}
+library(tidyverse) # Version 2.0.0  ~ For basic data wrangling
+library(readxl)    # Version 1.4.3  ~ To open Excel files
+library(sf)        # Version 1.0.15 ~ To handle shapefiles and plot maps
+library(highcharter) #For interactive plot
+library(viridisLite)
+library(geojsonio)
+
+# World map
+map_data <- readRDS("sirugue_2026/src/world_map.rds")
+
+# GEOM results
+index <- read_excel("sirugue_2026/src/index.xlsx")
+
+mobility <- read.csv("sirugue_2026/src/world_view_updated.csv") %>% 
+  filter(estimator == "IRA") %>% 
+  mutate(country = ifelse(country == "United States", "United States of America", country)) %>% 
+  select(name = country, paperId, mobility = estimate, source) %>% 
+  left_join(read_xlsx("sirugue_2026/src/shortlist_manual.xlsx"), by = "paperId") %>% 
+  mutate(plotcite = short_cite,
+         cite = paste0("[@", handle, "]"))
+
+data <- index %>% 
+  # Drop Chile 2009 which is not comparable because it has more circumstances
+  filter(!(c == "CHL" & y == 2009)) %>% 
+  select(name, c, iso, y, latest, var) %>% 
+  na.omit() %>% 
+  mutate(y = as.numeric(y)) %>% 
+  filter(latest == 1) %>% 
+  select(name, c, iso, y, var) %>% 
+  mutate(name = ifelse(name == "Czech Rep.", "Czech Republic", name)) %>% 
+  full_join(mobility, by = "name")%>% 
+  mutate(iso = ifelse(name == "Canada", "CAN", iso),
+         iso = ifelse(name == "New Zealand", "NZL", iso),
+         iso = ifelse(name == "Russia", "RUS", iso),
+         iso = ifelse(name == "Taiwan", "TWN", iso),
+         iso = ifelse(name == "Turkey", "TUR", iso),
+         iso = ifelse(name == "Uruguay", "URY", iso)) %>% 
+  select(iso, mobility, plotcite, source) %>% 
+  na.omit()
+
+stops <- data.frame(
+  q = 0:9 / 9,
+  c = viridis(10, direction = -1, option = "G"),
+  stringsAsFactors = FALSE
+)
+stops <- list_parse2(stops)
+
+highchart(type = "map") %>%
+  hc_add_series_map(
+    map = map_data,
+    df = data,
+    joinBy = c("iso-a3", "iso"),
+    value = "mobility",
+    name = "Intergenerational persistence",
+    borderColor = "#FAFAFA",
+    borderWidth = 0.1,
+    tooltip = list(
+      pointFormat = "<b>{point.name}: {point.value}</b><br>Source: {point.plotcite} [{point.source}]",
+      valueDecimals = 2
+    )
+  ) %>% 
+  hc_colorAxis(stops = stops, 
+               min = min(data$mobility, na.rm = T), 
+               max = max(data$mobility, na.rm = T)) 
+```
+
